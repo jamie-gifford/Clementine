@@ -186,7 +186,7 @@ bool Playlist::column_is_editable(Playlist::Column column) {
     case Column_Genre:
     case Column_Score:
     case Column_Comment:
-      return true;
+      return false;
     default:
       break;
   }
