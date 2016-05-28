@@ -1082,6 +1082,7 @@ bool Song::IsMetadataEqual(const Song& other) const {
          length_nanosec() == other.length_nanosec() &&
          d->bitrate_ == other.d->bitrate_ &&
          d->samplerate_ == other.d->samplerate_ &&
+         d->rating_ == other.d->rating_ &&
          d->art_automatic_ == other.d->art_automatic_ &&
          d->art_manual_ == other.d->art_manual_ &&
          d->rating_ == other.d->rating_ &&
@@ -1164,6 +1165,7 @@ void Song::MergeUserSetData(const Song& other) {
   set_score(other.score());
   set_art_manual(other.art_manual());
   if (rating() == -1.0f) {
-    set_rating(other.rating());
+    // Don't consider the rating as a "user set data"
+    // set_rating(other.rating());
   }
 }
