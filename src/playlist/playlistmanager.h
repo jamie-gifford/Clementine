@@ -147,6 +147,8 @@ class PlaylistManager : public PlaylistManagerInterface {
   Playlist* current() const { return playlist(current_id()); }
   Playlist* active() const { return playlist(active_id()); }
 
+  Application* app();
+
   // Returns the collection of playlists managed by this PlaylistManager.
   QList<Playlist*> GetAllPlaylists() const;
   // Grays out and reloads all deleted songs in all playlists.

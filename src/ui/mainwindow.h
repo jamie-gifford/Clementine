@@ -215,6 +215,8 @@ signals:
   void ScrobbledRadioStream();
 #endif
 
+  void SetToggleLockIcon(bool value);
+
   void TaskCountChanged(int count);
 
   void ShowLibraryConfig();
@@ -271,6 +273,8 @@ signals:
 
   void HandleNotificationPreview(OSD::Behaviour type, QString line1,
                                  QString line2);
+
+  void ToggleLock();
 
   void ScrollToInternetIndex(const QModelIndex& index);
   void FocusGlobalSearchField();
@@ -372,6 +376,8 @@ signals:
   PlayBehaviour menu_playmode_;
 
   BackgroundStreams* background_streams_;
+  
+  // bool player_locked_;
 };
 
 #endif  // MAINWINDOW_H

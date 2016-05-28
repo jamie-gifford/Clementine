@@ -25,6 +25,8 @@
 #include "ui/iconloader.h"
 #include "widgets/renametablineedit.h"
 #include "widgets/favoritewidget.h"
+#include "core/application.h"
+
 
 #include <QCheckBox>
 #include <QContextMenuEvent>
@@ -171,13 +173,25 @@ void PlaylistTabBar::Close() {
 
   const int playlist_id = tabData(menu_index_).toInt();
 
+  const int active_id = manager_->active_id();
+
+  qLog(Debug) << "Close : active_id = " << active_id << " and playlist_id = " << playlist_id;
+
+
   QSettings s;
   s.beginGroup(kSettingsGroup);
 
   const bool ask_for_delete = s.value("warn_close_playlist", true).toBool();
 
-  if (ask_for_delete && !manager_->IsPlaylistFavorite(playlist_id) &&
-      !manager_->playlist(playlist_id)->GetAllSongs().empty()) {
+  bool check_delete = (ask_for_delete && !manager_->IsPlaylistFavorite(playlist_id) &&
+        !manager_->playlist(playlist_id)->GetAllSongs().empty());
+
+  bool check_active = (active_id == playlist_id && manager_->app()->player_locked_);
+
+  qLog(Debug) << "Close : check_delete = " << check_delete << " and check_active = " << check_active;
+
+  if (check_delete || check_active) {
+
     QMessageBox confirmation_box;
     confirmation_box.setWindowIcon(QIcon(":/icon.png"));
     confirmation_box.setWindowTitle(tr("Remove playlist"));

@@ -542,3 +542,8 @@ void PlaylistManager::SetCurrentOrOpen(int id) {
 }
 
 bool PlaylistManager::IsPlaylistOpen(int id) { return playlists_.contains(id); }
+
+Application* PlaylistManager::app() {
+  return app_;
+}
+

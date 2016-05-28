@@ -60,6 +60,9 @@ const char* PlaylistView::kSettingBackgroundImageFilename =
 const int PlaylistView::kDefaultBlurRadius = 0;
 const int PlaylistView::kDefaultOpacityLevel = 40;
 
+const QColor cortina = QColor(255, 253, 163);
+const QColor cortina_text = QColor(200, 200, 200);
+
 PlaylistProxyStyle::PlaylistProxyStyle(QStyle* base)
     : QProxyStyle(base), cleanlooks_(new QCleanlooksStyle) {}
 
@@ -539,6 +542,23 @@ void PlaylistView::drawRow(QPainter* painter,
       }
     }
   } else {
+
+    PlaylistItemPtr item = playlist_->item_at(index.row());
+    Song song = item->Metadata();
+    QRegExp tvm("tango|vals|milonga");
+
+    bool isTvm = (song.genre() != NULL) && (song.genre().contains(tvm));
+
+    if (! isTvm && app_->player_locked_ && ! selectionModel()->isSelected(index)) {
+    	opt.font.setItalic(true);
+    	opt.palette.setColor(QPalette::Text, cortina_text);
+
+        painter->fillRect(opt.rect, cortina);
+
+        opt.palette.setColor(QPalette::Highlight, Qt::transparent);
+        opt.palette.setColor(QPalette::AlternateBase, Qt::transparent);
+    }
+
     QTreeView::drawRow(painter, opt, index);
   }
 }
@@ -597,6 +617,11 @@ bool CompareSelectionRanges(const QItemSelectionRange& a,
 }
 
 void PlaylistView::keyPressEvent(QKeyEvent* event) {
+  int shift = event->modifiers() & Qt::ShiftModifier;
+  int unlocked = shift || ! app_->player_locked_;
+
+  qLog(Debug) << "keyPressEvent : player_locked_ = " << app_->player_locked_;
+
   if (!model() || state() == QAbstractItemView::EditingState) {
     QTreeView::keyPressEvent(event);
   } else if (event == QKeySequence::Delete) {
@@ -610,18 +635,25 @@ void PlaylistView::keyPressEvent(QKeyEvent* event) {
   } else if (event == QKeySequence::Copy) {
     CopyCurrentSongToClipboard();
   } else if (event->key() == Qt::Key_Enter || event->key() == Qt::Key_Return) {
-    if (currentIndex().isValid()) emit PlayItem(currentIndex());
+    if (currentIndex().isValid()) {
+      bool tmp = app_->player_locked_;
+      if (shift) {
+	app_->player_locked_ = false;
+      }
+      emit PlayItem(currentIndex());
+      app_->player_locked_ = tmp;
+    }
     event->accept();
-  } else if (event->modifiers() != Qt::ControlModifier  // Ctrl+Space selects
+  } else if (unlocked && event->modifiers() != Qt::ControlModifier  // Ctrl+Space selects
                                                         // the item
              &&
              event->key() == Qt::Key_Space) {
     emit PlayPause();
     event->accept();
-  } else if (event->key() == Qt::Key_Left) {
+  } else if (unlocked && event->key() == Qt::Key_Left) {
     emit SeekBackward();
     event->accept();
-  } else if (event->key() == Qt::Key_Right) {
+  } else if (unlocked && event->key() == Qt::Key_Right) {
     emit SeekForward();
     event->accept();
   } else if (event->modifiers() ==

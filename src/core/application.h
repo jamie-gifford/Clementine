@@ -101,7 +101,9 @@ class Application : public QObject {
   void MoveToNewThread(QObject* object);
   void MoveToThread(QObject* object, QThread* thread);
 
- public slots:
+  bool player_locked_;
+
+public slots:
   void AddError(const QString& message);
   void ReloadSettings();
   void OpenSettingsDialogAtPage(SettingsDialog::Page page);

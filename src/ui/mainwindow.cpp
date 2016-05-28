@@ -416,8 +416,7 @@ MainWindow::MainWindow(Application* app, SystemTrayIcon* tray_icon, OSD* osd,
   connect(ui_->action_mute, SIGNAL(triggered()), app_->player(), SLOT(Mute()));
 #ifdef HAVE_LIBLASTFM
   connect(ui_->action_love, SIGNAL(triggered()), SLOT(Love()));
-  connect(ui_->action_toggle_scrobbling, SIGNAL(triggered()), app_->scrobbler(),
-          SLOT(ToggleScrobbling()));
+  connect(ui_->action_toggle_scrobbling, SIGNAL(triggered()), SLOT(ToggleLock()));
 #endif
 
 #ifdef HAVE_VK
@@ -1043,6 +1042,8 @@ MainWindow::MainWindow(Application* app, SystemTrayIcon* tray_icon, OSD* osd,
   if (!options.contains_play_options())
     LoadPlaybackStatus();
 
+  SetToggleScrobblingIcon(true);
+
   qLog(Debug) << "Started";
 }
 
@@ -1199,6 +1200,7 @@ void MainWindow::TrackSkipped(PlaylistItemPtr item) {
 
 #ifdef HAVE_LIBLASTFM
 void MainWindow::ScrobblingEnabledChanged(bool value) {
+  app_->player_locked_ = value;
   if (ui_->action_toggle_scrobbling->isVisible())
     SetToggleScrobblingIcon(value);
 
@@ -1302,6 +1304,12 @@ void MainWindow::ResumePlayback() {
 
 void MainWindow::PlayIndex(const QModelIndex& index) {
   if (!index.isValid()) return;
+
+  if (app_->player_locked_) {
+    if (app_->player()->GetState() == Engine::Playing) {
+       return;
+    }
+  }
 
   int row = index.row();
   if (index.model() == app_->playlist_manager()->current()->proxy()) {
@@ -2701,14 +2709,28 @@ QPixmap MainWindow::CreateOverlayedIcon(int position, int scrobble_point) {
 }
 
 void MainWindow::SetToggleScrobblingIcon(bool value) {
+  value = app_->player_locked_;
   if (!value) {
-    ui_->action_toggle_scrobbling->setIcon(
-        IconLoader::Load("as_disabled", IconLoader::Lastfm));
+    ui_->action_toggle_scrobbling->setIcon(IconLoader::Load("as_disabled", IconLoader::Lastfm));
   } else {
-    ui_->action_toggle_scrobbling->setIcon(
-        IconLoader::Load("as_light", IconLoader::Lastfm));
+    ui_->action_toggle_scrobbling->setIcon(IconLoader::Load("as_light", IconLoader::Lastfm));
   }
 }
+
+void MainWindow::ToggleLock() {
+  app_->player_locked_ = ! app_->player_locked_;
+  SetToggleLockIcon(app_->player_locked_);
+}
+
+void MainWindow::SetToggleLockIcon(bool value) {
+  if (!value) {
+       ui_->action_toggle_scrobbling->setIcon(QIcon(":/last.fm/as_disabled.png"));
+  } else {
+       ui_->action_toggle_scrobbling->setIcon(QIcon(":/last.fm/as_light.png"));
+  }
+}
+
+
 
 #ifdef HAVE_LIBLASTFM
 void MainWindow::ScrobbleSubmitted() {
@@ -2802,13 +2824,16 @@ void MainWindow::ShowConsole() {
 }
 
 void MainWindow::keyPressEvent(QKeyEvent* event) {
-  if (event->key() == Qt::Key_Space) {
+  int shift = event->modifiers() & Qt::ShiftModifier;
+  int unlocked = shift || ! app_->player_locked_;
+
+  if (unlocked && event->key() == Qt::Key_Space) {
     app_->player()->PlayPause();
     event->accept();
-  } else if (event->key() == Qt::Key_Left) {
+  } else if (unlocked && event->key() == Qt::Key_Left) {
     app_->player()->SeekBackward();
     event->accept();
-  } else if (event->key() == Qt::Key_Right) {
+  } else if (unlocked && event->key() == Qt::Key_Right) {
     app_->player()->SeekForward();
     event->accept();
   } else {
