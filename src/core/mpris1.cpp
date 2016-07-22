@@ -273,7 +273,8 @@ void Mpris1Player::Mute() { app_->player()->Mute(); }
 void Mpris1Player::ShowOSD() { app_->player()->ShowOSD(); }
 
 int Mpris1TrackList::AddTrack(const QString& track, bool play) {
-  app_->playlist_manager()->active()->InsertUrls(QList<QUrl>() << QUrl(track),
+  app_->playlist_manager()->New("Added");
+  app_->playlist_manager()->current()->InsertUrls(QList<QUrl>() << QUrl(track),
                                                  -1, play);
   return 0;
 }
