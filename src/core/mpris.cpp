@@ -18,12 +18,15 @@
 */
 
 #include "mpris.h"
+#include "mpris1.h"
 #include "mpris2.h"
 
 namespace mpris {
 
 Mpris::Mpris(Application* app, QObject* parent)
-    : QObject(parent), mpris2_(new mpris::Mpris2(app, this)) {
+    : QObject(parent),
+      mpris1_(new mpris::Mpris1(app, this)),
+      mpris2_(new mpris::Mpris2(app, mpris1_, this)) {
   connect(mpris2_, SIGNAL(RaiseMainWindow()), SIGNAL(RaiseMainWindow()));
 }
 
