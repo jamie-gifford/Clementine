@@ -95,7 +95,7 @@ find_path(SPARSEHASH_INCLUDE_DIRS google/sparsetable)
 option(USE_BUILTIN_TAGLIB "If the system's version of Taglib is too old, compile our builtin version instead" ON)
 if (USE_BUILTIN_TAGLIB AND TAGLIB_VERSION VERSION_LESS 1.8)
   message(STATUS "Using builtin taglib because your system's version is too old")
-  set(TAGLIB_VERSION 1.10.0)
+  set(TAGLIB_VERSION 1.11.0)
   set(TAGLIB_INCLUDE_DIRS "${CMAKE_BINARY_DIR}/3rdparty/taglib/headers/taglib/;${CMAKE_BINARY_DIR}/3rdparty/taglib/headers/")
   set(TAGLIB_LIBRARY_DIRS "")
   set(TAGLIB_LIBRARIES tag)
@@ -249,6 +249,10 @@ optional_component(DEVICEKIT ON "Devices: DeviceKit backend"
   DEPENDS "D-Bus support" HAVE_DBUS
 )
 
+optional_component(UDISKS2 ON "Devices: UDisks2 backend"
+  DEPENDS "D-Bus support" HAVE_DBUS
+)
+
 optional_component(SPOTIFY_BLOB ON "Spotify support: non-GPL binary helper"
   DEPENDS "protobuf" PROTOBUF_FOUND PROTOBUF_PROTOC_EXECUTABLE
   DEPENDS "libspotify" SPOTIFY_FOUND
@@ -359,9 +363,6 @@ else (USE_SYSTEM_QXT)
     add_subdirectory(3rdparty/qxt)
   endif (NOT APPLE)
 endif (USE_SYSTEM_QXT)
-
-find_path(ECHONEST_INCLUDE_DIRS echonest/echonest_export.h)
-find_library(ECHONEST_LIBRARIES echonest)
 
 # Use system gmock if it's available
 # We need to look for both gmock and gtest

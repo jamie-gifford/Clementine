@@ -20,7 +20,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Clementine Music Player\n"
-"PO-Revision-Date: 2016-05-18 16:11+0000\n"
+"PO-Revision-Date: 2016-06-28 13:51+0000\n"
 "Last-Translator: Clementine Buildbot <clementinebuildbot@davidsansome.com>\n"
 "Language-Team: Korean (http://www.transifex.com/davidsansome/clementine/language/ko/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -63,7 +63,7 @@ msgstr " ms"
 msgid " pt"
 msgstr " pt"
 
-#: ../bin/src/ui_behavioursettingspage.h:359
+#: ../bin/src/ui_behavioursettingspage.h:367
 msgid " s"
 msgstr " "
 
@@ -112,7 +112,7 @@ msgstr "%2의 %1"
 msgid "%1 playlists (%2)"
 msgstr "%1 재생목록 (%2)"
 
-#: playlist/playlistmanager.cpp:403
+#: playlist/playlistmanager.cpp:406
 #, qt-format
 msgid "%1 selected of"
 msgstr "다음 중 %1개 선택됨"
@@ -137,7 +137,7 @@ msgstr "%1개 노래 찾음"
 msgid "%1 songs found (showing %2)"
 msgstr "%1개 노래 찾음 (%2개 표시 중)"
 
-#: playlist/playlistmanager.cpp:409
+#: playlist/playlistmanager.cpp:412
 #, qt-format
 msgid "%1 tracks"
 msgstr "%1개 트랙"
@@ -286,7 +286,7 @@ msgstr "0px"
 msgid "1 day"
 msgstr "1일"
 
-#: playlist/playlistmanager.cpp:409
+#: playlist/playlistmanager.cpp:412
 msgid "1 track"
 msgstr "1개 트랙"
 
@@ -384,7 +384,7 @@ msgid ""
 "A song will be included in the playlist if it matches these conditions."
 msgstr "노래가 이러한 조건과 일치하면 재생 목록에 포함됩니다."
 
-#: smartplaylists/searchterm.cpp:370
+#: smartplaylists/searchterm.cpp:382
 msgid "A-Z"
 msgstr "A-Z"
 
@@ -430,7 +430,7 @@ msgid "About Qt..."
 msgstr "Qt 정보"
 
 #: playlist/playlistsaveoptionsdialog.cpp:34
-#: ../bin/src/ui_behavioursettingspage.h:363
+#: ../bin/src/ui_behavioursettingspage.h:371
 msgid "Absolute"
 msgstr "절대경로"
 
@@ -489,7 +489,7 @@ msgstr "다른 스트림 추가..."
 msgid "Add directory..."
 msgstr "디렉토리 추가..."
 
-#: ui/mainwindow.cpp:1983
+#: ui/mainwindow.cpp:1982
 msgid "Add file"
 msgstr "파일 추가"
 
@@ -509,7 +509,7 @@ msgstr "파일 추가..."
 msgid "Add files to transcode"
 msgstr "변환할 파일 추가"
 
-#: transcoder/transcodedialog.cpp:306 ui/mainwindow.cpp:2010
+#: transcoder/transcodedialog.cpp:306 ui/mainwindow.cpp:2009
 #: ripper/ripcddialog.cpp:185
 msgid "Add folder"
 msgstr "폴더 추가"
@@ -626,7 +626,7 @@ msgstr "Spotify 재색목록에 추가"
 msgid "Add to Spotify starred"
 msgstr "Spotify 별점에 추가"
 
-#: ui/mainwindow.cpp:1805
+#: ui/mainwindow.cpp:1804
 msgid "Add to another playlist"
 msgstr "다른 재생목록에 추가"
 
@@ -638,8 +638,8 @@ msgstr "북마크에 추가"
 msgid "Add to playlist"
 msgstr "재생목록에 추가"
 
-#: ../bin/src/ui_behavioursettingspage.h:343
-#: ../bin/src/ui_behavioursettingspage.h:355
+#: ../bin/src/ui_behavioursettingspage.h:351
+#: ../bin/src/ui_behavioursettingspage.h:363
 msgid "Add to the queue"
 msgstr "대기열에 추가"
 
@@ -685,7 +685,7 @@ msgid "After copying..."
 msgstr "복사 한 후...."
 
 #: library/savedgroupingmanager.cpp:65 playlist/playlist.cpp:1318
-#: ui/organisedialog.cpp:61 ui/qtsystemtrayicon.cpp:236
+#: ui/organisedialog.cpp:61 ui/qtsystemtrayicon.cpp:251
 #: ../bin/src/ui_groupbydialog.h:128 ../bin/src/ui_groupbydialog.h:147
 #: ../bin/src/ui_groupbydialog.h:166 ../bin/src/ui_albumcoversearcher.h:110
 #: ../bin/src/ui_albumcoversearcher.h:112 ../bin/src/ui_edittagdialog.h:734
@@ -778,16 +778,16 @@ msgstr "미드/사이드 인코딩 적용"
 msgid "Alongside the originals"
 msgstr "원본과 함께"
 
-#: ../bin/src/ui_behavioursettingspage.h:316
+#: ../bin/src/ui_behavioursettingspage.h:324
 msgid "Always hide the main window"
 msgstr "항상 메인 창 숨기기"
 
-#: ../bin/src/ui_behavioursettingspage.h:315
+#: ../bin/src/ui_behavioursettingspage.h:323
 msgid "Always show the main window"
 msgstr "항상 메인 창 표시함"
 
-#: ../bin/src/ui_behavioursettingspage.h:329
-#: ../bin/src/ui_behavioursettingspage.h:349
+#: ../bin/src/ui_behavioursettingspage.h:337
+#: ../bin/src/ui_behavioursettingspage.h:357
 msgid "Always start playing"
 msgstr "항상 재생 시작"
 
@@ -834,7 +834,7 @@ msgstr "재생목록에 파일/URL 추가"
 msgid "Append to current playlist"
 msgstr "현재 재생목록에 추가"
 
-#: ../bin/src/ui_behavioursettingspage.h:340
+#: ../bin/src/ui_behavioursettingspage.h:348
 msgid "Append to the playlist"
 msgstr "재생목록에 추가"
 
@@ -858,7 +858,7 @@ msgid ""
 msgstr "라이브러리의 모든 곡의 해당하는 음악 파일에 음악 통계를 작성 하시겠습니까?"
 
 #: library/savedgroupingmanager.cpp:62 playlist/playlist.cpp:1316
-#: ui/organisedialog.cpp:62 ui/qtsystemtrayicon.cpp:234
+#: ui/organisedialog.cpp:62 ui/qtsystemtrayicon.cpp:249
 #: ../bin/src/ui_groupbydialog.h:129 ../bin/src/ui_groupbydialog.h:148
 #: ../bin/src/ui_groupbydialog.h:167 ../bin/src/ui_albumcoversearcher.h:106
 #: ../bin/src/ui_albumcoversearcher.h:108 ../bin/src/ui_edittagdialog.h:732
@@ -870,15 +870,11 @@ msgstr "음악가"
 msgid "Artist info"
 msgstr "음악가 정보"
 
-#: songinfo/echonesttags.cpp:62
-msgid "Artist tags"
-msgstr "음악가 태그"
-
 #: ui/organisedialog.cpp:63
 msgid "Artist's initial"
 msgstr "음악가 이니셜"
 
-#: ../bin/src/ui_behavioursettingspage.h:365
+#: ../bin/src/ui_behavioursettingspage.h:373
 msgid "Ask when saving"
 msgstr "저장할 때 묻기"
 
@@ -913,7 +909,7 @@ msgid "Auto"
 msgstr "자동"
 
 #: playlist/playlistsaveoptionsdialog.cpp:32
-#: ../bin/src/ui_behavioursettingspage.h:362
+#: ../bin/src/ui_behavioursettingspage.h:370
 msgid "Automatic"
 msgstr "자동"
 
@@ -986,7 +982,7 @@ msgstr "기본 파랑"
 msgid "Basic audio type"
 msgstr "기본 오디오 형식"
 
-#: ../bin/src/ui_behavioursettingspage.h:304
+#: ../bin/src/ui_behavioursettingspage.h:311
 msgid "Behavior"
 msgstr "행동"
 
@@ -994,10 +990,9 @@ msgstr "행동"
 msgid "Best"
 msgstr "최고"
 
-#: songinfo/echonestbiographies.cpp:85
-#, qt-format
-msgid "Biography from %1"
-msgstr "%1의 바이오그래피"
+#: songinfo/artistbiography.cpp:90 songinfo/artistbiography.cpp:255
+msgid "Biography"
+msgstr ""
 
 #: playlist/playlist.cpp:1354 ../bin/src/ui_edittagdialog.h:718
 msgid "Bit rate"
@@ -1123,7 +1118,7 @@ msgstr "단축키 바꾸기..."
 msgid "Change shuffle mode"
 msgstr "셔플 모드 "
 
-#: ../bin/src/ui_behavioursettingspage.h:354
+#: ../bin/src/ui_behavioursettingspage.h:362
 msgid "Change the currently playing song"
 msgstr "지금 재생 중인 음악 바꾸기"
 
@@ -1269,7 +1264,7 @@ msgid ""
 "installed Clementine properly."
 msgstr "Clementine이 projectM 시각화를 불러올 수 없습니다. Clementine이 제대로 설치되었는지 확인해 보세요."
 
-#: widgets/prettyimage.cpp:199
+#: widgets/prettyimage.cpp:200
 msgid "Clementine image viewer"
 msgstr "Clementine 이미지 뷰어"
 
@@ -1342,7 +1337,7 @@ msgstr "색상"
 msgid "Comma separated list of class:level, level is 0-3"
 msgstr "콤마로 클래스:단계의 목록을 나눔, 단계는 0-3"
 
-#: playlist/playlist.cpp:1371 smartplaylists/searchterm.cpp:358
+#: playlist/playlist.cpp:1371 smartplaylists/searchterm.cpp:370
 #: ui/organisedialog.cpp:75 ../bin/src/ui_edittagdialog.h:743
 msgid "Comment"
 msgstr "설명"
@@ -1419,7 +1414,7 @@ msgstr "설정..."
 msgid "Connect Wii Remotes using active/deactive action"
 msgstr "사용/중지 실행으로 Wii 리모컨 연결"
 
-#: devices/devicemanager.cpp:321 devices/devicemanager.cpp:326
+#: devices/devicemanager.cpp:330 devices/devicemanager.cpp:335
 msgid "Connect device"
 msgstr "장치 연결"
 
@@ -1594,7 +1589,7 @@ msgstr "사용자 정의 메시지 설정"
 msgid "Custom..."
 msgstr "사용자 정의..."
 
-#: devices/devicekitlister.cpp:125
+#: devices/devicekitlister.cpp:125 devices/udisks2lister.cpp:76
 msgid "DBus path"
 msgstr "DBus 경로"
 
@@ -1617,7 +1612,7 @@ msgstr "생성한 날짜"
 msgid "Date modified"
 msgstr "수정한 날짜"
 
-#: smartplaylists/searchterm.cpp:393
+#: smartplaylists/searchterm.cpp:405
 msgid "Days"
 msgstr "일"
 
@@ -1664,7 +1659,7 @@ msgid "Delete downloaded data"
 msgstr "다운로드된 데이터 삭제"
 
 #: devices/deviceview.cpp:408 library/libraryview.cpp:645
-#: ui/mainwindow.cpp:2332 widgets/fileview.cpp:186
+#: ui/mainwindow.cpp:2332 widgets/fileview.cpp:188
 msgid "Delete files"
 msgstr "파일 삭제"
 
@@ -1697,11 +1692,11 @@ msgstr "원본 파일 삭제"
 msgid "Deleting files"
 msgstr "파일 삭제 중"
 
-#: ui/mainwindow.cpp:1726
+#: ui/mainwindow.cpp:1725
 msgid "Dequeue selected tracks"
 msgstr "선택한 트랙을 대기열에서 해제"
 
-#: ui/mainwindow.cpp:1724
+#: ui/mainwindow.cpp:1723
 msgid "Dequeue track"
 msgstr "트랙을 대기열에서 해제"
 
@@ -1714,7 +1709,7 @@ msgstr "대상"
 msgid "Details..."
 msgstr "세부 내용..."
 
-#: devices/devicekitlister.cpp:128 devices/giolister.cpp:156
+#: devices/devicekitlister.cpp:128 devices/giolister.cpp:162
 msgid "Device"
 msgstr "장치"
 
@@ -1860,11 +1855,11 @@ msgstr "기부"
 msgid "Double click to open"
 msgstr "열려면 더블클릭하세요"
 
-#: ../bin/src/ui_behavioursettingspage.h:351
+#: ../bin/src/ui_behavioursettingspage.h:359
 msgid "Double clicking a song in the playlist will..."
 msgstr ""
 
-#: ../bin/src/ui_behavioursettingspage.h:337
+#: ../bin/src/ui_behavioursettingspage.h:345
 msgid "Double clicking a song will..."
 msgstr "노래를 더블클릭하면..."
 
@@ -1973,7 +1968,7 @@ msgstr "다이나믹 랜덤 믹스"
 msgid "Edit smart playlist..."
 msgstr "스마트 재생목록 편집..."
 
-#: ui/mainwindow.cpp:1768
+#: ui/mainwindow.cpp:1767
 #, qt-format
 msgid "Edit tag \"%1\"..."
 msgstr "태그 수정 \"%1\"..."
@@ -2023,7 +2018,7 @@ msgstr "이퀄라이저 사용"
 msgid "Enable shortcuts only when Clementine is focused"
 msgstr "Clementine이 활성화 되었을 때에만 단축키 허용"
 
-#: ../bin/src/ui_behavioursettingspage.h:323
+#: ../bin/src/ui_behavioursettingspage.h:331
 msgid "Enable song metadata inline edition with click"
 msgstr "클릭으로 음악 메타데이터 인라인판 사용"
 
@@ -2112,7 +2107,7 @@ msgid "Equivalent to --log-levels *:3"
 msgstr "동등한 --log-level *:3"
 
 #: internet/magnatune/magnatunedownloaddialog.cpp:246
-#: library/libraryview.cpp:639 ui/mainwindow.cpp:2039 ui/mainwindow.cpp:2284
+#: library/libraryview.cpp:639 ui/mainwindow.cpp:2038 ui/mainwindow.cpp:2284
 #: ui/mainwindow.cpp:2430 internet/vk/vkservice.cpp:643
 msgid "Error"
 msgstr "오류"
@@ -2253,7 +2248,7 @@ msgstr "페이드 아웃"
 msgid "Fading duration"
 msgstr "페이드 아웃 시간"
 
-#: ui/mainwindow.cpp:2040
+#: ui/mainwindow.cpp:2039
 msgid "Failed reading CD drive"
 msgstr "CD 드라이브 읽기 실패"
 
@@ -2537,7 +2532,7 @@ msgstr "Google Drive"
 msgid "Got %1 covers out of %2 (%3 failed)"
 msgstr "%2 중 %1개 커버 가져옴 (%3 실패 됨)"
 
-#: ../bin/src/ui_behavioursettingspage.h:319
+#: ../bin/src/ui_behavioursettingspage.h:327
 msgid "Grey out non existent songs in my playlists"
 msgstr "내 재생목록에서 존재하지 않는 음악 회색화"
 
@@ -2635,7 +2630,7 @@ msgstr "힙합"
 msgid "Host not found, check server URL. Example: http://localhost:4040/"
 msgstr "호스트가 발견되지 않았습니다. 서버의 주소를 확인하세요. 예)http://localhost:4040/"
 
-#: smartplaylists/searchterm.cpp:391
+#: smartplaylists/searchterm.cpp:403
 msgid "Hours"
 msgstr "시간"
 
@@ -2659,13 +2654,13 @@ msgstr "상단에 아이콘"
 msgid "Identifying song"
 msgstr "음악을 식별하는 "
 
-#: ../bin/src/ui_behavioursettingspage.h:321
+#: ../bin/src/ui_behavioursettingspage.h:329
 msgid ""
 "If activated, clicking a selected song in the playlist view will let you "
 "edit the tag value directly"
 msgstr "이 기능을 활성화 하면 재생목록에서 음악을 선택하는 것으로 음악정보를 직접 수정할 수 있습니다."
 
-#: devices/devicemanager.cpp:566 devices/devicemanager.cpp:577
+#: devices/devicemanager.cpp:575 devices/devicemanager.cpp:586
 msgid ""
 "If you continue, this device will work slowly and songs copied to it may not"
 " work."
@@ -2837,7 +2832,7 @@ msgstr "Jamendo 금주의 최그 트랙"
 msgid "Jamendo database"
 msgstr "Jamendo 데이터베이스"
 
-#: ../bin/src/ui_behavioursettingspage.h:334
+#: ../bin/src/ui_behavioursettingspage.h:342
 msgid "Jump to previous song right away"
 msgstr "바로 이전 곡으로 이동"
 
@@ -2857,7 +2852,7 @@ msgstr "%1 초 동안 버튼 유지..."
 msgid "Keep buttons for %1 seconds..."
 msgstr "%1 초 동안 버튼 유지..."
 
-#: ../bin/src/ui_behavioursettingspage.h:306
+#: ../bin/src/ui_behavioursettingspage.h:314
 msgid "Keep running in the background when the window is closed"
 msgstr "창을 닫을 때 백그라운드에서 계속 실행"
 
@@ -2874,7 +2869,7 @@ msgstr "고양이"
 msgid "Kuduro"
 msgstr "쿠두루"
 
-#: ../bin/src/ui_behavioursettingspage.h:308
+#: ../bin/src/ui_behavioursettingspage.h:316
 msgid "Language"
 msgstr "언어"
 
@@ -2948,7 +2943,7 @@ msgid "Left"
 msgstr "왼쪽"
 
 #: playlist/playlist.cpp:1320 ui/organisedialog.cpp:76
-#: ui/qtsystemtrayicon.cpp:239 ../bin/src/ui_edittagdialog.h:714
+#: ui/qtsystemtrayicon.cpp:254 ../bin/src/ui_edittagdialog.h:714
 msgid "Length"
 msgstr "길이"
 
@@ -3036,7 +3031,7 @@ msgid "Loading tracks info"
 msgstr "트랙 정보 불러오는중"
 
 #: library/librarymodel.cpp:164
-#: internet/podcasts/podcastdiscoverymodel.cpp:105 widgets/prettyimage.cpp:167
+#: internet/podcasts/podcastdiscoverymodel.cpp:105 widgets/prettyimage.cpp:168
 #: widgets/widgetfadehelper.cpp:96 internet/vk/vkservice.cpp:513
 #: internet/vk/vksettingspage.cpp:125 ../bin/src/ui_addpodcastdialog.h:179
 #: ../bin/src/ui_searchpreview.h:105 ../bin/src/ui_organisedialog.h:261
@@ -3252,7 +3247,7 @@ msgstr "라이브러리의 변화를 감지"
 msgid "Mono playback"
 msgstr "모노 재생"
 
-#: smartplaylists/searchterm.cpp:397
+#: smartplaylists/searchterm.cpp:409
 msgid "Months"
 msgstr "개월"
 
@@ -3277,11 +3272,11 @@ msgstr "더 "
 msgid "Most played"
 msgstr "자주 재생됨"
 
-#: devices/giolister.cpp:155
+#: devices/giolister.cpp:161
 msgid "Mount point"
 msgstr "마운트 지점"
 
-#: devices/devicekitlister.cpp:127
+#: devices/devicekitlister.cpp:127 devices/udisks2lister.cpp:78
 msgid "Mount points"
 msgstr "마운트 지점"
 
@@ -3299,7 +3294,7 @@ msgstr "라이브러리로 이동..."
 msgid "Move up"
 msgstr "위로 이동"
 
-#: transcoder/transcodedialog.cpp:225 ui/mainwindow.cpp:1984
+#: transcoder/transcodedialog.cpp:225 ui/mainwindow.cpp:1983
 #: internet/vk/vkservice.cpp:908
 msgid "Music"
 msgstr "음악"
@@ -3359,8 +3354,8 @@ msgstr "없음"
 msgid "Never played"
 msgstr "재생한 적 없음"
 
-#: ../bin/src/ui_behavioursettingspage.h:327
-#: ../bin/src/ui_behavioursettingspage.h:347
+#: ../bin/src/ui_behavioursettingspage.h:335
+#: ../bin/src/ui_behavioursettingspage.h:355
 msgid "Never start playing"
 msgstr "재생을 시작하지 않음"
 
@@ -3370,7 +3365,7 @@ msgstr "재생을 시작하지 않음"
 msgid "New folder"
 msgstr "새 폴더"
 
-#: ui/mainwindow.cpp:1822 ../bin/src/ui_mainwindow.h:693
+#: ui/mainwindow.cpp:1821 ../bin/src/ui_mainwindow.h:693
 msgid "New playlist"
 msgstr "새로운 재생목록"
 
@@ -3605,14 +3600,14 @@ msgstr "Google Drive에서 열기"
 msgid "Open in new playlist"
 msgstr "새로운 재생목록에서 열기"
 
-#: ../bin/src/ui_behavioursettingspage.h:342
+#: ../bin/src/ui_behavioursettingspage.h:350
 msgctxt "Refers to behavior settings in Clementine settings page."
 msgid "Open in new playlist"
 msgstr "새로운 재생목록에서 열기"
 
-#: songinfo/echonestbiographies.cpp:102
+#: songinfo/artistbiography.cpp:94 songinfo/artistbiography.cpp:261
 msgid "Open in your browser"
-msgstr "브라우저에서 열기"
+msgstr ""
 
 #: ../bin/src/ui_globalshortcutssettingspage.h:168
 #: ../bin/src/ui_globalshortcutssettingspage.h:170
@@ -3708,6 +3703,10 @@ msgstr "소유자"
 msgid "Parsing Jamendo catalogue"
 msgstr "Jamendo 목록 구성 중"
 
+#: devices/udisks2lister.cpp:79
+msgid "Partition label"
+msgstr ""
+
 #: ui/equalizer.cpp:139
 msgid "Party"
 msgstr "파티"
@@ -3721,8 +3720,8 @@ msgstr "파티"
 msgid "Password"
 msgstr "비밀번호"
 
-#: core/globalshortcuts.cpp:50 ui/mainwindow.cpp:1137 ui/mainwindow.cpp:1633
-#: ui/qtsystemtrayicon.cpp:175 wiimotedev/wiimotesettingspage.cpp:114
+#: core/globalshortcuts.cpp:50 ui/mainwindow.cpp:1136 ui/mainwindow.cpp:1632
+#: ui/qtsystemtrayicon.cpp:189 wiimotedev/wiimotesettingspage.cpp:114
 msgid "Pause"
 msgstr "일시중지"
 
@@ -3749,9 +3748,9 @@ msgstr "픽셀"
 msgid "Plain sidebar"
 msgstr "일반 사이드바"
 
-#: core/globalshortcuts.cpp:49 ui/mainwindow.cpp:670 ui/mainwindow.cpp:1103
-#: ui/mainwindow.cpp:1122 ui/mainwindow.cpp:1637 ui/qtsystemtrayicon.cpp:164
-#: ui/qtsystemtrayicon.cpp:188 wiimotedev/wiimotesettingspage.cpp:107
+#: core/globalshortcuts.cpp:49 ui/mainwindow.cpp:670 ui/mainwindow.cpp:1102
+#: ui/mainwindow.cpp:1121 ui/mainwindow.cpp:1636 ui/qtsystemtrayicon.cpp:177
+#: ui/qtsystemtrayicon.cpp:203 wiimotedev/wiimotesettingspage.cpp:107
 #: ../bin/src/ui_mainwindow.h:659
 msgid "Play"
 msgstr "재생"
@@ -3764,8 +3763,8 @@ msgstr "재생 횟수"
 msgid "Play if stopped, pause if playing"
 msgstr "중지중일때 재생, 재생중일때 중지"
 
-#: ../bin/src/ui_behavioursettingspage.h:328
-#: ../bin/src/ui_behavioursettingspage.h:348
+#: ../bin/src/ui_behavioursettingspage.h:336
+#: ../bin/src/ui_behavioursettingspage.h:356
 msgid "Play if there is nothing already playing"
 msgstr "이미 재생되는 곡이 없다면 재생"
 
@@ -3787,7 +3786,7 @@ msgstr "플레이어 옵션"
 
 #: playlist/playlistcontainer.cpp:290 playlist/playlistlistcontainer.cpp:228
 #: playlist/playlistmanager.cpp:86 playlist/playlistmanager.cpp:155
-#: playlist/playlistmanager.cpp:495 playlist/playlisttabbar.cpp:366
+#: playlist/playlistmanager.cpp:498 playlist/playlisttabbar.cpp:366
 msgid "Playlist"
 msgstr "재생목록"
 
@@ -3890,7 +3889,7 @@ msgstr "a키를 누르세요"
 msgid "Press a key combination to use for %1..."
 msgstr "%1에 사용하기 위한 키조합을 누르세요..."
 
-#: ../bin/src/ui_behavioursettingspage.h:331
+#: ../bin/src/ui_behavioursettingspage.h:339
 msgid "Pressing \"Previous\" in player will..."
 msgstr "\"이전 트랙\"을 누르면..."
 
@@ -3964,12 +3963,12 @@ msgstr "장치 질의..."
 msgid "Queue Manager"
 msgstr "대기열 관리자"
 
-#: ui/mainwindow.cpp:1730
+#: ui/mainwindow.cpp:1729
 msgid "Queue selected tracks"
 msgstr "선택한 트랙을 큐에 추가"
 
 #: globalsearch/globalsearchview.cpp:466 library/libraryview.cpp:389
-#: ui/mainwindow.cpp:1728
+#: ui/mainwindow.cpp:1727
 msgid "Queue track"
 msgstr "대기열 트랙"
 
@@ -4059,7 +4058,7 @@ msgid "Reggae"
 msgstr "레게"
 
 #: playlist/playlistsaveoptionsdialog.cpp:33
-#: ../bin/src/ui_behavioursettingspage.h:364
+#: ../bin/src/ui_behavioursettingspage.h:372
 msgid "Relative"
 msgstr "상대경로"
 
@@ -4067,7 +4066,7 @@ msgstr "상대경로"
 msgid "Remember Wii remote swing"
 msgstr "Wii 리모콘 스윙 기억하기"
 
-#: ../bin/src/ui_behavioursettingspage.h:317
+#: ../bin/src/ui_behavioursettingspage.h:325
 msgid "Remember from last time"
 msgstr "마지막 기억"
 
@@ -4151,7 +4150,7 @@ msgstr "한 곡 반복"
 msgid "Replace current playlist"
 msgstr "현재 재생목록 교체"
 
-#: ../bin/src/ui_behavioursettingspage.h:341
+#: ../bin/src/ui_behavioursettingspage.h:349
 msgid "Replace the playlist"
 msgstr "재생목록 교체"
 
@@ -4183,7 +4182,7 @@ msgstr "초기화"
 msgid "Reset play counts"
 msgstr "재생 횟수 초기화"
 
-#: ../bin/src/ui_behavioursettingspage.h:335
+#: ../bin/src/ui_behavioursettingspage.h:343
 msgid "Restart song, then jump to previous if pressed again"
 msgstr ""
 
@@ -4196,7 +4195,7 @@ msgstr ""
 msgid "Restrict to ASCII characters"
 msgstr "ASCII 문자로 제한"
 
-#: ../bin/src/ui_behavioursettingspage.h:318
+#: ../bin/src/ui_behavioursettingspage.h:326
 msgid "Resume playback on start"
 msgstr "시작할 때 재생목록 일시정지"
 
@@ -4271,7 +4270,7 @@ msgstr "커버를 디스크에 저장..."
 msgid "Save current grouping"
 msgstr ""
 
-#: widgets/prettyimage.cpp:184 widgets/prettyimage.cpp:229
+#: widgets/prettyimage.cpp:185 widgets/prettyimage.cpp:230
 msgid "Save image"
 msgstr "그림 저장"
 
@@ -4280,7 +4279,7 @@ msgctxt "Save playlist menu action."
 msgid "Save playlist"
 msgstr "재생목록 저장"
 
-#: playlist/playlistmanager.cpp:225
+#: playlist/playlistmanager.cpp:229
 msgctxt "Title of the playlist save dialog."
 msgid "Save playlist"
 msgstr "재생목록 저장"
@@ -4332,6 +4331,10 @@ msgstr "점수"
 #: ../bin/src/ui_lastfmsettingspage.h:135
 msgid "Scrobble tracks that I listen to"
 msgstr "내가 들은 청취 기록 트랙"
+
+#: ../bin/src/ui_behavioursettingspage.h:313
+msgid "Scroll over icon to change track"
+msgstr ""
 
 #: ../bin/src/ui_seafilesettingspage.h:164
 msgid "Seafile"
@@ -4426,7 +4429,7 @@ msgstr "현재 재생중인 트랙을 상대 양으로 탐색"
 msgid "Seek the currently playing track to an absolute position"
 msgstr "현재 재생중인 트랙을 절대 위치로 탐색"
 
-#: ../bin/src/ui_behavioursettingspage.h:357
+#: ../bin/src/ui_behavioursettingspage.h:365
 msgid "Seeking using a keyboard shortcut or mouse wheel"
 msgstr ""
 
@@ -4466,7 +4469,7 @@ msgstr "시각화 선택..."
 msgid "Select..."
 msgstr "선택..."
 
-#: devices/devicekitlister.cpp:126
+#: devices/devicekitlister.cpp:126 devices/udisks2lister.cpp:77
 msgid "Serial number"
 msgstr "시리얼 넘버"
 
@@ -4486,7 +4489,7 @@ msgstr "서버 자세히"
 msgid "Service offline"
 msgstr "서비스 오프라인"
 
-#: ui/mainwindow.cpp:1767
+#: ui/mainwindow.cpp:1766
 #, qt-format
 msgid "Set %1 to \"%2\"..."
 msgstr "%1을 \"%2\"로 설정..."
@@ -4578,7 +4581,7 @@ msgstr "라이브러리에서 커버아트 보기"
 msgid "Show dividers"
 msgstr "분할 표시"
 
-#: ui/albumcoverchoicecontroller.cpp:72 widgets/prettyimage.cpp:182
+#: ui/albumcoverchoicecontroller.cpp:72 widgets/prettyimage.cpp:183
 msgid "Show fullsize..."
 msgstr "전체화면 보기..."
 
@@ -4627,7 +4630,7 @@ msgstr "\"좋아요\" 버튼 보기"
 msgid "Show the scrobble button in the main window"
 msgstr "메인 창에서 청취기록 버튼 보이기"
 
-#: ../bin/src/ui_behavioursettingspage.h:305
+#: ../bin/src/ui_behavioursettingspage.h:312
 msgid "Show tray icon"
 msgstr "트레이 아이콘 보기"
 
@@ -4671,10 +4674,6 @@ msgstr "로그아웃"
 msgid "Signing in..."
 msgstr "로그인..."
 
-#: songinfo/echonestsimilarartists.cpp:58
-msgid "Similar artists"
-msgstr "유사한 음악가"
-
 #: ../bin/src/ui_albumcoverexport.h:211
 msgid "Size"
 msgstr "크기"
@@ -4699,11 +4698,11 @@ msgstr "넘긴 회수"
 msgid "Skip forwards in playlist"
 msgstr "재생목록에서 앞으로 넘기기"
 
-#: ui/mainwindow.cpp:1741
+#: ui/mainwindow.cpp:1740
 msgid "Skip selected tracks"
 msgstr "선택된 트랙들 "
 
-#: ui/mainwindow.cpp:1739
+#: ui/mainwindow.cpp:1738
 msgid "Skip track"
 msgstr "트랙 "
 
@@ -5060,7 +5059,7 @@ msgid ""
 "continue?"
 msgstr "파일들이 장치로 부터 삭제 될 것 입니다. 계속 진행 하시겠습니까?"
 
-#: library/libraryview.cpp:646 ui/mainwindow.cpp:2333 widgets/fileview.cpp:187
+#: library/libraryview.cpp:646 ui/mainwindow.cpp:2333 widgets/fileview.cpp:189
 msgid ""
 "These files will be permanently deleted from disk, are you sure you want to "
 "continue?"
@@ -5108,20 +5107,20 @@ msgstr ""
 msgid "This device supports the following file formats:"
 msgstr "이 장치는 다음의 파일 형식을 지원합니다:"
 
-#: devices/devicemanager.cpp:563 devices/devicemanager.cpp:574
+#: devices/devicemanager.cpp:572 devices/devicemanager.cpp:583
 msgid "This device will not work properly"
 msgstr "이 기기는 완벽하게 작동하지 않을 수 있음."
 
-#: devices/devicemanager.cpp:564
+#: devices/devicemanager.cpp:573
 msgid ""
 "This is an MTP device, but you compiled Clementine without libmtp support."
 msgstr "MTP 장치이지만 libmtp 지원을 하지 않도록 Clementine이 컴파일 되었습니다."
 
-#: devices/devicemanager.cpp:575
+#: devices/devicemanager.cpp:584
 msgid "This is an iPod, but you compiled Clementine without libgpod support."
 msgstr "iPod 장치이지만 libgpod 지원을 하지 않도록 Clementine이 컴파일 되었습니다."
 
-#: devices/devicemanager.cpp:322
+#: devices/devicemanager.cpp:331
 msgid ""
 "This is the first time you have connected this device.  Clementine will now "
 "scan the device to find music files - this may take some time."
@@ -5135,17 +5134,17 @@ msgstr "이 옵션은 환경설정의 \"행동\" 에서 변경할 수 있습니�
 msgid "This stream is for paid subscribers only"
 msgstr "이 스트림은 유료 subscribers만 사용할 수 있습니다"
 
-#: devices/devicemanager.cpp:591
+#: devices/devicemanager.cpp:600
 #, qt-format
 msgid "This type of device is not supported: %1"
 msgstr "이 장치의 형태는 지원되지 않습니다: %1"
 
-#: ../bin/src/ui_behavioursettingspage.h:358
+#: ../bin/src/ui_behavioursettingspage.h:366
 msgid "Time step"
 msgstr "시간 간격"
 
 #: playlist/playlist.cpp:1314 ui/organisedialog.cpp:60
-#: ui/qtsystemtrayicon.cpp:232 ../bin/src/ui_about.h:141
+#: ui/qtsystemtrayicon.cpp:247 ../bin/src/ui_about.h:141
 #: ../bin/src/ui_edittagdialog.h:730 ../bin/src/ui_trackselectiondialog.h:210
 #: ../bin/src/ui_ripcddialog.h:306
 msgid "Title"
@@ -5163,7 +5162,7 @@ msgstr "예쁜 OSD 토글"
 msgid "Toggle fullscreen"
 msgstr "전체화면 토글"
 
-#: ui/mainwindow.cpp:1732
+#: ui/mainwindow.cpp:1731
 msgid "Toggle queue status"
 msgstr "대기열 상황 토글"
 
@@ -5246,13 +5245,17 @@ msgstr "터빈"
 msgid "Turn off"
 msgstr "끄기"
 
-#: devices/giolister.cpp:157
+#: devices/giolister.cpp:163
 msgid "URI"
 msgstr "URI"
 
 #: core/commandlineoptions.cpp:150
 msgid "URL(s)"
 msgstr "URL(들)"
+
+#: devices/udisks2lister.cpp:80
+msgid "UUID"
+msgstr ""
 
 #: ../bin/src/ui_transcoderoptionsspeex.h:227
 msgid "Ultra wide band (UWB)"
@@ -5271,7 +5274,7 @@ msgstr "%1(%2)를 다운로드 할 수 없습니다"
 #: core/song.cpp:435 library/librarymodel.cpp:374 library/librarymodel.cpp:379
 #: library/librarymodel.cpp:383 library/librarymodel.cpp:1156
 #: library/savedgroupingmanager.cpp:103 playlist/playlistdelegates.cpp:305
-#: playlist/playlistmanager.cpp:502 playlist/playlistmanager.cpp:503
+#: playlist/playlistmanager.cpp:505 playlist/playlistmanager.cpp:506
 #: ui/albumcoverchoicecontroller.cpp:126 ui/edittagdialog.cpp:463
 #: ui/edittagdialog.cpp:507
 msgid "Unknown"
@@ -5290,11 +5293,11 @@ msgstr "알 수 없는 오류"
 msgid "Unset cover"
 msgstr "커버 해제"
 
-#: ui/mainwindow.cpp:1737
+#: ui/mainwindow.cpp:1736
 msgid "Unskip selected tracks"
 msgstr "선택된 트랙들 넘기기 "
 
-#: ui/mainwindow.cpp:1735
+#: ui/mainwindow.cpp:1734
 msgid "Unskip track"
 msgstr "트랙 넘기기 "
 
@@ -5303,7 +5306,7 @@ msgstr "트랙 넘기기 "
 msgid "Unsubscribe"
 msgstr "구독 안함"
 
-#: songinfo/songkickconcerts.cpp:174
+#: songinfo/songkickconcerts.cpp:158
 msgid "Upcoming Concerts"
 msgstr "다가오는 콘서트"
 
@@ -5405,7 +5408,7 @@ msgstr "Wii 리모콘 상태 보고를 위한 알림 사용"
 msgid "Use temporal noise shaping"
 msgstr ""
 
-#: ../bin/src/ui_behavioursettingspage.h:311
+#: ../bin/src/ui_behavioursettingspage.h:319
 msgid "Use the system default"
 msgstr "시스템 기본 값 사용"
 
@@ -5437,7 +5440,7 @@ msgstr "사용자 인터페이스"
 msgid "Username"
 msgstr "사용자명"
 
-#: ../bin/src/ui_behavioursettingspage.h:324
+#: ../bin/src/ui_behavioursettingspage.h:332
 msgid "Using the menu to add a song will..."
 msgstr "음악 추가를 하였을 때..."
 
@@ -5451,7 +5454,7 @@ msgid "Variable bit rate"
 msgstr "가변 비트 전송률"
 
 #: globalsearch/globalsearchmodel.cpp:109 library/librarymodel.cpp:300
-#: playlist/playlistmanager.cpp:514 ui/albumcovermanager.cpp:273
+#: playlist/playlistmanager.cpp:517 ui/albumcovermanager.cpp:273
 msgid "Various artists"
 msgstr "다양한 음악가"
 
@@ -5506,7 +5509,7 @@ msgstr "WMA"
 msgid "Wall"
 msgstr ""
 
-#: playlist/playlisttabbar.cpp:192 ../bin/src/ui_behavioursettingspage.h:307
+#: playlist/playlisttabbar.cpp:192 ../bin/src/ui_behavioursettingspage.h:315
 msgid "Warn me when closing a playlist tab"
 msgstr "재생목록 탭을 닫으면 알림"
 
@@ -5518,11 +5521,11 @@ msgstr "Wav"
 msgid "Website"
 msgstr "웹 사이트"
 
-#: smartplaylists/searchterm.cpp:395
+#: smartplaylists/searchterm.cpp:407
 msgid "Weeks"
 msgstr "주"
 
-#: ../bin/src/ui_behavioursettingspage.h:314
+#: ../bin/src/ui_behavioursettingspage.h:322
 msgid "When Clementine starts"
 msgstr "Clementine이 시작할 때"
 
@@ -5532,7 +5535,7 @@ msgid ""
 "If there are no matches then it will use the largest image in the directory."
 msgstr ""
 
-#: ../bin/src/ui_behavioursettingspage.h:361
+#: ../bin/src/ui_behavioursettingspage.h:369
 msgid "When saving a playlist, file paths should be"
 msgstr "재생목록을 저장할 때, 파일경로 처리 방식"
 
@@ -5616,7 +5619,7 @@ msgstr "지금 전부 다시 검색해도 좋습니까?"
 msgid "Write all songs statistics into songs' files"
 msgstr "모든 음악에 통계를 작성"
 
-#: ../bin/src/ui_behavioursettingspage.h:366
+#: ../bin/src/ui_behavioursettingspage.h:374
 msgid "Write metadata"
 msgstr "메타데이터 작성"
 
@@ -5637,7 +5640,7 @@ msgstr "년도"
 msgid "Year - Album"
 msgstr "년도 - 앨범"
 
-#: smartplaylists/searchterm.cpp:399
+#: smartplaylists/searchterm.cpp:411
 msgid "Years"
 msgstr "년도"
 
@@ -5731,7 +5734,7 @@ msgid ""
 "shortcuts in Clementine."
 msgstr ""
 
-#: ../bin/src/ui_behavioursettingspage.h:313
+#: ../bin/src/ui_behavioursettingspage.h:321
 msgid "You will need to restart Clementine if you change the language."
 msgstr "언어를 변경을 하였다면 Clementine을 재시작 해야합니다."
 
@@ -5769,7 +5772,7 @@ msgstr "당신의 시스템은 OpenGL을 지원하지 않아서, 시각화를 �
 msgid "Your username or password was incorrect."
 msgstr "사용자명 또는 비밀번호가 틀렸습니다."
 
-#: smartplaylists/searchterm.cpp:370
+#: smartplaylists/searchterm.cpp:382
 msgid "Z-A"
 msgstr "Z-A"
 
@@ -5783,7 +5786,7 @@ msgctxt ""
 msgid "add %n songs"
 msgstr "%n 곡 추가"
 
-#: smartplaylists/searchterm.cpp:205
+#: smartplaylists/searchterm.cpp:217
 msgid "after"
 msgstr "이후"
 
@@ -5799,15 +5802,15 @@ msgstr "그리고"
 msgid "automatic"
 msgstr "자동"
 
-#: smartplaylists/searchterm.cpp:207
+#: smartplaylists/searchterm.cpp:219
 msgid "before"
 msgstr "이전"
 
-#: smartplaylists/searchterm.cpp:217
+#: smartplaylists/searchterm.cpp:229
 msgid "between"
 msgstr "사이"
 
-#: smartplaylists/searchterm.cpp:380
+#: smartplaylists/searchterm.cpp:392
 msgid "biggest first"
 msgstr "큰 순서"
 
@@ -5815,7 +5818,7 @@ msgstr "큰 순서"
 msgid "bpm"
 msgstr "bpm"
 
-#: smartplaylists/searchterm.cpp:225
+#: smartplaylists/searchterm.cpp:237
 msgid "contains"
 msgstr "포함"
 
@@ -5830,15 +5833,15 @@ msgstr "사용 안함"
 msgid "disc %1"
 msgstr "%1 디스크"
 
-#: smartplaylists/searchterm.cpp:227
+#: smartplaylists/searchterm.cpp:239
 msgid "does not contain"
 msgstr "포함 되지 않음"
 
-#: smartplaylists/searchterm.cpp:231
+#: smartplaylists/searchterm.cpp:243
 msgid "ends with"
 msgstr "으로 끝남"
 
-#: smartplaylists/searchterm.cpp:237
+#: smartplaylists/searchterm.cpp:249
 msgid "equals"
 msgstr "같음"
 
@@ -5850,7 +5853,7 @@ msgstr "gpodder.net"
 msgid "gpodder.net directory"
 msgstr "gpodder.net 디렉토리"
 
-#: smartplaylists/searchterm.cpp:233
+#: smartplaylists/searchterm.cpp:245
 msgid "greater than"
 msgstr "보다 큼"
 
@@ -5858,7 +5861,7 @@ msgstr "보다 큼"
 msgid "iPods and USB devices currently don't work on Windows.  Sorry!"
 msgstr "죄송합니다. iPods 과 USB 장치가 현재 Windows 에서 작동하지 않습니다. "
 
-#: smartplaylists/searchterm.cpp:213
+#: smartplaylists/searchterm.cpp:225
 msgid "in the last"
 msgstr "마지막으로"
 
@@ -5869,11 +5872,11 @@ msgstr "마지막으로"
 msgid "kbps"
 msgstr "kbps"
 
-#: smartplaylists/searchterm.cpp:235
+#: smartplaylists/searchterm.cpp:247
 msgid "less than"
 msgstr "보다 작음"
 
-#: smartplaylists/searchterm.cpp:376
+#: smartplaylists/searchterm.cpp:388
 msgid "longest first"
 msgstr "긴것을 먼저"
 
@@ -5883,27 +5886,27 @@ msgctxt ""
 msgid "move %n songs"
 msgstr "%n 곡 이동"
 
-#: smartplaylists/searchterm.cpp:373
+#: smartplaylists/searchterm.cpp:385
 msgid "newest first"
 msgstr "최신 순서"
 
-#: smartplaylists/searchterm.cpp:239
+#: smartplaylists/searchterm.cpp:251
 msgid "not equals"
 msgstr "같지 않음"
 
-#: smartplaylists/searchterm.cpp:215
+#: smartplaylists/searchterm.cpp:227
 msgid "not in the last"
 msgstr ""
 
-#: smartplaylists/searchterm.cpp:211
+#: smartplaylists/searchterm.cpp:223
 msgid "not on"
 msgstr ""
 
-#: smartplaylists/searchterm.cpp:372
+#: smartplaylists/searchterm.cpp:384
 msgid "oldest first"
 msgstr "오래된것을 먼저"
 
-#: smartplaylists/searchterm.cpp:209
+#: smartplaylists/searchterm.cpp:221
 msgid "on"
 msgstr ""
 
@@ -5925,7 +5928,7 @@ msgctxt ""
 msgid "remove %n songs"
 msgstr "%n 곡 제거"
 
-#: smartplaylists/searchterm.cpp:375
+#: smartplaylists/searchterm.cpp:387
 msgid "shortest first"
 msgstr "짧은 순서"
 
@@ -5933,7 +5936,7 @@ msgstr "짧은 순서"
 msgid "shuffle songs"
 msgstr "섞인 노래들"
 
-#: smartplaylists/searchterm.cpp:379
+#: smartplaylists/searchterm.cpp:391
 msgid "smallest first"
 msgstr "작은 순서"
 
@@ -5941,7 +5944,7 @@ msgstr "작은 순서"
 msgid "sort songs"
 msgstr "음악 정렬"
 
-#: smartplaylists/searchterm.cpp:229
+#: smartplaylists/searchterm.cpp:241
 msgid "starts with"
 msgstr "으로 시작"
 

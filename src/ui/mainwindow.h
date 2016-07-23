@@ -277,6 +277,7 @@ signals:
   void ToggleLock();
 
   void ScrollToInternetIndex(const QModelIndex& index);
+  void FocusLibraryTab();
   void FocusGlobalSearchField();
   void DoGlobalSearch(const QString& query);
 

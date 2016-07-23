@@ -35,7 +35,6 @@ include_directories(${LIBPROJECTM_INCLUDE_DIRS})
 include_directories(${QTSINGLEAPPLICATION_INCLUDE_DIRS})
 include_directories(${QTIOCOMPRESSOR_INCLUDE_DIRS})
 include_directories(${QXT_INCLUDE_DIRS})
-include_directories(${ECHONEST_INCLUDE_DIRS})
 include_directories(${SHA2_INCLUDE_DIRS})
 include_directories(${CHROMAPRINT_INCLUDE_DIRS})
 include_directories(${MYGPOQT_INCLUDE_DIRS})
@@ -298,11 +297,10 @@ set(SOURCES
   smartplaylists/wizard.cpp
   smartplaylists/wizardplugin.cpp
 
+  songinfo/artistbiography.cpp
   songinfo/artistinfoview.cpp
   songinfo/collapsibleinfoheader.cpp
   songinfo/collapsibleinfopane.cpp
-  songinfo/echonestbiographies.cpp
-  songinfo/echonestimages.cpp
   songinfo/songinfobase.cpp
   songinfo/songinfofetcher.cpp
   songinfo/songinfoprovider.cpp
@@ -312,6 +310,7 @@ set(SOURCES
   songinfo/songkickconcerts.cpp
   songinfo/songkickconcertwidget.cpp
   songinfo/songplaystats.cpp
+  songinfo/spotifyimages.cpp
   songinfo/taglyricsinfoprovider.cpp
   songinfo/ultimatelyricslyric.cpp
   songinfo/ultimatelyricsprovider.cpp
@@ -590,11 +589,10 @@ set(HEADERS
   smartplaylists/wizard.h
   smartplaylists/wizardplugin.h
 
+  songinfo/artistbiography.h
   songinfo/artistinfoview.h
   songinfo/collapsibleinfoheader.h
   songinfo/collapsibleinfopane.h
-  songinfo/echonestbiographies.h
-  songinfo/echonestimages.h
   songinfo/songinfobase.h
   songinfo/songinfofetcher.h
   songinfo/songinfoprovider.h
@@ -604,6 +602,7 @@ set(HEADERS
   songinfo/songkickconcerts.h
   songinfo/songkickconcertwidget.h
   songinfo/songplaystats.h
+  songinfo/spotifyimages.h
   songinfo/taglyricsinfoprovider.h
   songinfo/ultimatelyricslyric.h
   songinfo/ultimatelyricsprovider.h
@@ -830,16 +829,12 @@ optional_source(HAVE_LIBLASTFM
     internet/lastfm/lastfmcompat.cpp
     internet/lastfm/lastfmservice.cpp
     internet/lastfm/lastfmsettingspage.cpp
-    songinfo/echonestsimilarartists.cpp
-    songinfo/echonesttags.cpp
     songinfo/lastfmtrackinfoprovider.cpp
     songinfo/tagwidget.cpp
   HEADERS
     covers/lastfmcoverprovider.h
     internet/lastfm/lastfmservice.h
     internet/lastfm/lastfmsettingspage.h
-    songinfo/echonestsimilarartists.h
-    songinfo/echonesttags.h
     songinfo/lastfmtrackinfoprovider.h
     songinfo/tagwidget.h
   UI
@@ -975,6 +970,34 @@ if(HAVE_DBUS)
         dbus/udisksdevice)
   endif(HAVE_DEVICEKIT)
 
+  if(HAVE_UDISKS2)
+      set_source_files_properties(dbus/org.freedesktop.DBus.ObjectManager.xml
+          PROPERTIES NO_NAMESPACE dbus/objectmanager INCLUDE dbus/metatypes.h)
+      set_source_files_properties(dbus/org.freedesktop.UDisks2.Filesystem.xml
+          PROPERTIES NO_NAMESPACE dbus/udisks2filesystem INCLUDE dbus/metatypes.h)
+      set_source_files_properties(dbus/org.freedesktop.UDisks2.Block.xml
+          PROPERTIES NO_NAMESPACE dbus/udisks2block INCLUDE dbus/metatypes.h)
+      set_source_files_properties(dbus/org.freedesktop.UDisks2.Drive.xml
+          PROPERTIES NO_NAMESPACE dbus/udisks2drive INCLUDE dbus/metatypes.h)
+      set_source_files_properties(dbus/org.freedesktop.UDisks2.Job.xml
+          PROPERTIES NO_NAMESPACE dbus/udisks2job INCLUDE dbus/metatypes.h)
+      qt4_add_dbus_interface(SOURCES
+          dbus/org.freedesktop.DBus.ObjectManager.xml
+          dbus/objectmanager)
+      qt4_add_dbus_interface(SOURCES
+          dbus/org.freedesktop.UDisks2.Filesystem.xml
+          dbus/udisks2filesystem)
+      qt4_add_dbus_interface(SOURCES
+          dbus/org.freedesktop.UDisks2.Block.xml
+          dbus/udisks2block)
+      qt4_add_dbus_interface(SOURCES
+          dbus/org.freedesktop.UDisks2.Drive.xml
+          dbus/udisks2drive)
+      qt4_add_dbus_interface(SOURCES
+          dbus/org.freedesktop.UDisks2.Job.xml
+          dbus/udisks2job)
+  endif(HAVE_UDISKS2)
+
   # Wiimotedev interface classes
   if(ENABLE_WIIMOTEDEV)
     qt4_add_dbus_interface(SOURCES
@@ -1010,6 +1033,11 @@ optional_source(HAVE_WIIMOTEDEV
 optional_source(HAVE_DEVICEKIT
   SOURCES devices/devicekitlister.cpp
   HEADERS devices/devicekitlister.h
+)
+
+optional_source(HAVE_UDISKS2
+  SOURCES devices/udisks2lister.cpp
+  HEADERS devices/udisks2lister.h
 )
 
 # Libgpod device backend
@@ -1234,7 +1262,6 @@ target_link_libraries(clementine_lib
   ${TAGLIB_LIBRARIES}
   ${MYGPOQT_LIBRARIES}
   ${CHROMAPRINT_LIBRARIES}
-  ${ECHONEST_LIBRARIES}
   ${GOBJECT_LIBRARIES}
   ${GLIB_LIBRARIES}
   ${GIO_LIBRARIES}

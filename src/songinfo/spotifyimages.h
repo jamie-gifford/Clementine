@@ -1,5 +1,5 @@
 /* This file is part of Clementine.
-   Copyright 2010, David Sansome <me@davidsansome.com>
+   Copyright 2016, John Maguire <john.maguire@gmail.com>
 
    Clementine is free software: you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -15,29 +15,27 @@
    along with Clementine.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#ifndef ECHONESTTAGS_H
-#define ECHONESTTAGS_H
+#ifndef SPOTIFYIMAGES_H
+#define SPOTIFYIMAGES_H
 
 #include <memory>
 
-#include "songinfoprovider.h"
+#include "songinfo/songinfoprovider.h"
 
-class QNetworkReply;
+class NetworkAccessManager;
 
-class EchoNestTags : public SongInfoProvider {
+class SpotifyImages : public SongInfoProvider {
   Q_OBJECT
-
  public:
-  void FetchInfo(int id, const Song& metadata);
+  SpotifyImages();
+  ~SpotifyImages();
 
- private slots:
-  void RequestFinished();
+  void FetchInfo(int id, const Song& metadata) override;
 
  private:
-  struct Request;
-  typedef std::shared_ptr<Request> RequestPtr;
+  void FetchImagesForArtist(int id, const QString& spotify_id);
 
-  QMap<QNetworkReply*, RequestPtr> requests_;
+  std::unique_ptr<NetworkAccessManager> network_;
 };
 
-#endif  // ECHONESTTAGS_H
+#endif  // SPOTIFYIMAGES_H

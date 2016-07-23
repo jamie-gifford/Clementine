@@ -22,7 +22,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Clementine Music Player\n"
-"PO-Revision-Date: 2016-05-18 16:11+0000\n"
+"PO-Revision-Date: 2016-06-28 13:51+0000\n"
 "Last-Translator: Clementine Buildbot <clementinebuildbot@davidsansome.com>\n"
 "Language-Team: Polish (http://www.transifex.com/davidsansome/clementine/language/pl/)\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -65,7 +65,7 @@ msgstr " ms"
 msgid " pt"
 msgstr " pkt"
 
-#: ../bin/src/ui_behavioursettingspage.h:359
+#: ../bin/src/ui_behavioursettingspage.h:367
 msgid " s"
 msgstr "s"
 
@@ -114,7 +114,7 @@ msgstr "%1 na %2"
 msgid "%1 playlists (%2)"
 msgstr "%1 list odtwarzania (%2)"
 
-#: playlist/playlistmanager.cpp:403
+#: playlist/playlistmanager.cpp:406
 #, qt-format
 msgid "%1 selected of"
 msgstr "%1 zaznaczonych z"
@@ -139,7 +139,7 @@ msgstr "znaleziono %1 utworów"
 msgid "%1 songs found (showing %2)"
 msgstr "znaleziono %1 utworów (pokazywane %2)"
 
-#: playlist/playlistmanager.cpp:409
+#: playlist/playlistmanager.cpp:412
 #, qt-format
 msgid "%1 tracks"
 msgstr "%1 ścieżek"
@@ -288,7 +288,7 @@ msgstr "0px"
 msgid "1 day"
 msgstr "1 dzień"
 
-#: playlist/playlistmanager.cpp:409
+#: playlist/playlistmanager.cpp:412
 msgid "1 track"
 msgstr "1 ścieżka"
 
@@ -386,7 +386,7 @@ msgid ""
 "A song will be included in the playlist if it matches these conditions."
 msgstr "Utwór zostanie uwzględniony w liście odtwarzania, jeśli spełni następujące kryteria."
 
-#: smartplaylists/searchterm.cpp:370
+#: smartplaylists/searchterm.cpp:382
 msgid "A-Z"
 msgstr "A-Z"
 
@@ -432,7 +432,7 @@ msgid "About Qt..."
 msgstr "O Qt..."
 
 #: playlist/playlistsaveoptionsdialog.cpp:34
-#: ../bin/src/ui_behavioursettingspage.h:363
+#: ../bin/src/ui_behavioursettingspage.h:371
 msgid "Absolute"
 msgstr "Absolutna"
 
@@ -491,7 +491,7 @@ msgstr "Dodaj następny strumień..."
 msgid "Add directory..."
 msgstr "Dodaj katalog..."
 
-#: ui/mainwindow.cpp:1983
+#: ui/mainwindow.cpp:1982
 msgid "Add file"
 msgstr "Dodaj plik"
 
@@ -511,7 +511,7 @@ msgstr "Dodaj plik..."
 msgid "Add files to transcode"
 msgstr "Dodaj pliki to transkodowania"
 
-#: transcoder/transcodedialog.cpp:306 ui/mainwindow.cpp:2010
+#: transcoder/transcodedialog.cpp:306 ui/mainwindow.cpp:2009
 #: ripper/ripcddialog.cpp:185
 msgid "Add folder"
 msgstr "Dodaj katalog"
@@ -628,7 +628,7 @@ msgstr "Dodaj do list odtwarzania Spotify"
 msgid "Add to Spotify starred"
 msgstr "Dodaj do śledzonych w Spotify"
 
-#: ui/mainwindow.cpp:1805
+#: ui/mainwindow.cpp:1804
 msgid "Add to another playlist"
 msgstr "Dodaj do innej listy odtwarzania"
 
@@ -640,8 +640,8 @@ msgstr "Dodaj do zakładek"
 msgid "Add to playlist"
 msgstr "Dodaj do listy odtwarzania"
 
-#: ../bin/src/ui_behavioursettingspage.h:343
-#: ../bin/src/ui_behavioursettingspage.h:355
+#: ../bin/src/ui_behavioursettingspage.h:351
+#: ../bin/src/ui_behavioursettingspage.h:363
 msgid "Add to the queue"
 msgstr "Kolejkuj ścieżkę"
 
@@ -687,7 +687,7 @@ msgid "After copying..."
 msgstr "Po skopiowaniu..."
 
 #: library/savedgroupingmanager.cpp:65 playlist/playlist.cpp:1318
-#: ui/organisedialog.cpp:61 ui/qtsystemtrayicon.cpp:236
+#: ui/organisedialog.cpp:61 ui/qtsystemtrayicon.cpp:251
 #: ../bin/src/ui_groupbydialog.h:128 ../bin/src/ui_groupbydialog.h:147
 #: ../bin/src/ui_groupbydialog.h:166 ../bin/src/ui_albumcoversearcher.h:110
 #: ../bin/src/ui_albumcoversearcher.h:112 ../bin/src/ui_edittagdialog.h:734
@@ -780,16 +780,16 @@ msgstr "Pozwól na kodowanie mid/side"
 msgid "Alongside the originals"
 msgstr "Wraz z oryginałami"
 
-#: ../bin/src/ui_behavioursettingspage.h:316
+#: ../bin/src/ui_behavioursettingspage.h:324
 msgid "Always hide the main window"
 msgstr "Zawsze ukrywaj główne okno"
 
-#: ../bin/src/ui_behavioursettingspage.h:315
+#: ../bin/src/ui_behavioursettingspage.h:323
 msgid "Always show the main window"
 msgstr "Zawsze wyświetlaj główne okno"
 
-#: ../bin/src/ui_behavioursettingspage.h:329
-#: ../bin/src/ui_behavioursettingspage.h:349
+#: ../bin/src/ui_behavioursettingspage.h:337
+#: ../bin/src/ui_behavioursettingspage.h:357
 msgid "Always start playing"
 msgstr "Odtwarzaj automatycznie"
 
@@ -836,7 +836,7 @@ msgstr "Dodaj pliki/adresy URL do listy odtwarzania"
 msgid "Append to current playlist"
 msgstr "Dołącz do aktualnej listy odtwarzania"
 
-#: ../bin/src/ui_behavioursettingspage.h:340
+#: ../bin/src/ui_behavioursettingspage.h:348
 msgid "Append to the playlist"
 msgstr "Dołącz do listy odtwarzania"
 
@@ -860,7 +860,7 @@ msgid ""
 msgstr "Czy na pewno chcesz zapisać w plikach wszystkie statystyki każdego utworu z twojej biblioteki?"
 
 #: library/savedgroupingmanager.cpp:62 playlist/playlist.cpp:1316
-#: ui/organisedialog.cpp:62 ui/qtsystemtrayicon.cpp:234
+#: ui/organisedialog.cpp:62 ui/qtsystemtrayicon.cpp:249
 #: ../bin/src/ui_groupbydialog.h:129 ../bin/src/ui_groupbydialog.h:148
 #: ../bin/src/ui_groupbydialog.h:167 ../bin/src/ui_albumcoversearcher.h:106
 #: ../bin/src/ui_albumcoversearcher.h:108 ../bin/src/ui_edittagdialog.h:732
@@ -872,15 +872,11 @@ msgstr "Wykonawca"
 msgid "Artist info"
 msgstr "O artyście"
 
-#: songinfo/echonesttags.cpp:62
-msgid "Artist tags"
-msgstr "Tagi wykonawcy"
-
 #: ui/organisedialog.cpp:63
 msgid "Artist's initial"
 msgstr "Inicjały wykonawcy"
 
-#: ../bin/src/ui_behavioursettingspage.h:365
+#: ../bin/src/ui_behavioursettingspage.h:373
 msgid "Ask when saving"
 msgstr "Zapytaj przy zapisywaniu"
 
@@ -915,7 +911,7 @@ msgid "Auto"
 msgstr "Automatycznie"
 
 #: playlist/playlistsaveoptionsdialog.cpp:32
-#: ../bin/src/ui_behavioursettingspage.h:362
+#: ../bin/src/ui_behavioursettingspage.h:370
 msgid "Automatic"
 msgstr "Automatyczne"
 
@@ -988,7 +984,7 @@ msgstr "Prosty niebieski"
 msgid "Basic audio type"
 msgstr "Podstawowy typ audio"
 
-#: ../bin/src/ui_behavioursettingspage.h:304
+#: ../bin/src/ui_behavioursettingspage.h:311
 msgid "Behavior"
 msgstr "Tryb"
 
@@ -996,10 +992,9 @@ msgstr "Tryb"
 msgid "Best"
 msgstr "Najlepsza"
 
-#: songinfo/echonestbiographies.cpp:85
-#, qt-format
-msgid "Biography from %1"
-msgstr "Biografia z %1"
+#: songinfo/artistbiography.cpp:90 songinfo/artistbiography.cpp:255
+msgid "Biography"
+msgstr ""
 
 #: playlist/playlist.cpp:1354 ../bin/src/ui_edittagdialog.h:718
 msgid "Bit rate"
@@ -1125,7 +1120,7 @@ msgstr "Zmień skrót..."
 msgid "Change shuffle mode"
 msgstr "Zmień tryb losowania utworów"
 
-#: ../bin/src/ui_behavioursettingspage.h:354
+#: ../bin/src/ui_behavioursettingspage.h:362
 msgid "Change the currently playing song"
 msgstr "Zmień aktualnie odtwarzaną piosenkę"
 
@@ -1271,7 +1266,7 @@ msgid ""
 "installed Clementine properly."
 msgstr "Clementine nie może wczytać wizualizacji. Sprawdź czy Clementine został zainstalowany prawidłowo."
 
-#: widgets/prettyimage.cpp:199
+#: widgets/prettyimage.cpp:200
 msgid "Clementine image viewer"
 msgstr "Przeglądarka obrazów Clementine"
 
@@ -1344,7 +1339,7 @@ msgstr "Kolory"
 msgid "Comma separated list of class:level, level is 0-3"
 msgstr "Rozdzielona przecinkami lista klasa:poziom, gdzie poziom wynosi 0-3"
 
-#: playlist/playlist.cpp:1371 smartplaylists/searchterm.cpp:358
+#: playlist/playlist.cpp:1371 smartplaylists/searchterm.cpp:370
 #: ui/organisedialog.cpp:75 ../bin/src/ui_edittagdialog.h:743
 msgid "Comment"
 msgstr "Komentarz"
@@ -1421,7 +1416,7 @@ msgstr "Konfiguruj..."
 msgid "Connect Wii Remotes using active/deactive action"
 msgstr "Podłącz urządzenia Wii Remote używając akcji aktywuj/deaktywuj"
 
-#: devices/devicemanager.cpp:321 devices/devicemanager.cpp:326
+#: devices/devicemanager.cpp:330 devices/devicemanager.cpp:335
 msgid "Connect device"
 msgstr "Podłącz urządzenie"
 
@@ -1596,7 +1591,7 @@ msgstr "Opcje niestandardowych wiadomości"
 msgid "Custom..."
 msgstr "Własny..."
 
-#: devices/devicekitlister.cpp:125
+#: devices/devicekitlister.cpp:125 devices/udisks2lister.cpp:76
 msgid "DBus path"
 msgstr "Ścieżka DBus"
 
@@ -1619,7 +1614,7 @@ msgstr "Data utworzenia"
 msgid "Date modified"
 msgstr "Data modyfikacji"
 
-#: smartplaylists/searchterm.cpp:393
+#: smartplaylists/searchterm.cpp:405
 msgid "Days"
 msgstr "Dni"
 
@@ -1666,7 +1661,7 @@ msgid "Delete downloaded data"
 msgstr "Usuń pobrane dane"
 
 #: devices/deviceview.cpp:408 library/libraryview.cpp:645
-#: ui/mainwindow.cpp:2332 widgets/fileview.cpp:186
+#: ui/mainwindow.cpp:2332 widgets/fileview.cpp:188
 msgid "Delete files"
 msgstr "Usuń pliki"
 
@@ -1699,11 +1694,11 @@ msgstr "Usuń oryginalne pliki"
 msgid "Deleting files"
 msgstr "Usuwanie plików"
 
-#: ui/mainwindow.cpp:1726
+#: ui/mainwindow.cpp:1725
 msgid "Dequeue selected tracks"
 msgstr "Usuń ścieżki z kolejki odtwarzania"
 
-#: ui/mainwindow.cpp:1724
+#: ui/mainwindow.cpp:1723
 msgid "Dequeue track"
 msgstr "Usuń ścieżkę z kolejki odtwarzania"
 
@@ -1716,7 +1711,7 @@ msgstr "Miejsce docelowe"
 msgid "Details..."
 msgstr "Szczegóły..."
 
-#: devices/devicekitlister.cpp:128 devices/giolister.cpp:156
+#: devices/devicekitlister.cpp:128 devices/giolister.cpp:162
 msgid "Device"
 msgstr "Urządzenie"
 
@@ -1862,11 +1857,11 @@ msgstr "Wpłać darowiznę"
 msgid "Double click to open"
 msgstr "Kliknij podwójnie, by otworzyć"
 
-#: ../bin/src/ui_behavioursettingspage.h:351
+#: ../bin/src/ui_behavioursettingspage.h:359
 msgid "Double clicking a song in the playlist will..."
 msgstr "Podwójne kliknięcie utworu na liście odtwarzania spowoduje..."
 
-#: ../bin/src/ui_behavioursettingspage.h:337
+#: ../bin/src/ui_behavioursettingspage.h:345
 msgid "Double clicking a song will..."
 msgstr "Podwójne kliknięcie utworu spowoduje..."
 
@@ -1975,7 +1970,7 @@ msgstr "Dynamiczny, losowy miks"
 msgid "Edit smart playlist..."
 msgstr "Edytuj inteligentną listę odtwarzania..."
 
-#: ui/mainwindow.cpp:1768
+#: ui/mainwindow.cpp:1767
 #, qt-format
 msgid "Edit tag \"%1\"..."
 msgstr "Edytuj tag \"%1\"..."
@@ -2025,7 +2020,7 @@ msgstr "Włącz korektor dźwięku"
 msgid "Enable shortcuts only when Clementine is focused"
 msgstr "Włącz skróty tylko, gdy Clementine jest aktywny"
 
-#: ../bin/src/ui_behavioursettingspage.h:323
+#: ../bin/src/ui_behavioursettingspage.h:331
 msgid "Enable song metadata inline edition with click"
 msgstr "Włącz bezpośrednią edycję metadanych piosenki po kliknięciu na listę odtwarzania"
 
@@ -2114,7 +2109,7 @@ msgid "Equivalent to --log-levels *:3"
 msgstr "Rownoważny --log-levels *:3"
 
 #: internet/magnatune/magnatunedownloaddialog.cpp:246
-#: library/libraryview.cpp:639 ui/mainwindow.cpp:2039 ui/mainwindow.cpp:2284
+#: library/libraryview.cpp:639 ui/mainwindow.cpp:2038 ui/mainwindow.cpp:2284
 #: ui/mainwindow.cpp:2430 internet/vk/vkservice.cpp:643
 msgid "Error"
 msgstr "Błąd"
@@ -2255,7 +2250,7 @@ msgstr "Przejście"
 msgid "Fading duration"
 msgstr "Czas przejścia"
 
-#: ui/mainwindow.cpp:2040
+#: ui/mainwindow.cpp:2039
 msgid "Failed reading CD drive"
 msgstr "Błąd odczytywania napędu CD"
 
@@ -2539,7 +2534,7 @@ msgstr "Dysk Google"
 msgid "Got %1 covers out of %2 (%3 failed)"
 msgstr "Uzyskano %1 okładek z %2 (%3 nieudane)"
 
-#: ../bin/src/ui_behavioursettingspage.h:319
+#: ../bin/src/ui_behavioursettingspage.h:327
 msgid "Grey out non existent songs in my playlists"
 msgstr "Usunięte utwory zostaną wyszarzone w listach odtwarzania"
 
@@ -2637,7 +2632,7 @@ msgstr "HipHop"
 msgid "Host not found, check server URL. Example: http://localhost:4040/"
 msgstr "Host nie został znaleziony, sprawdź URL serwera. Przykład: http://localhost:4040/"
 
-#: smartplaylists/searchterm.cpp:391
+#: smartplaylists/searchterm.cpp:403
 msgid "Hours"
 msgstr "Godzin"
 
@@ -2661,13 +2656,13 @@ msgstr "Ikony na górze"
 msgid "Identifying song"
 msgstr "Identyfikowanie utworu"
 
-#: ../bin/src/ui_behavioursettingspage.h:321
+#: ../bin/src/ui_behavioursettingspage.h:329
 msgid ""
 "If activated, clicking a selected song in the playlist view will let you "
 "edit the tag value directly"
 msgstr "Jeżeli zaznaczone, kliknięcie zaznaczonej piosenki na liście odtwarzania pozwoli na bezpośrednią edycje znaczników"
 
-#: devices/devicemanager.cpp:566 devices/devicemanager.cpp:577
+#: devices/devicemanager.cpp:575 devices/devicemanager.cpp:586
 msgid ""
 "If you continue, this device will work slowly and songs copied to it may not"
 " work."
@@ -2839,7 +2834,7 @@ msgstr "Najlepsze ścieżki tego tygodnia na Jamendo"
 msgid "Jamendo database"
 msgstr "Baza danych Jamendo"
 
-#: ../bin/src/ui_behavioursettingspage.h:334
+#: ../bin/src/ui_behavioursettingspage.h:342
 msgid "Jump to previous song right away"
 msgstr "Natychmiastowo przeskocz do poprzedniej piosenki"
 
@@ -2859,7 +2854,7 @@ msgstr "Przytrzymaj klawisze przez %1 sekundę..."
 msgid "Keep buttons for %1 seconds..."
 msgstr "Przytrzymaj klawisze przez %1 sekundy..."
 
-#: ../bin/src/ui_behavioursettingspage.h:306
+#: ../bin/src/ui_behavioursettingspage.h:314
 msgid "Keep running in the background when the window is closed"
 msgstr "Pozostań w tle po zamknięciu okna"
 
@@ -2876,7 +2871,7 @@ msgstr "Kotki"
 msgid "Kuduro"
 msgstr "Kuduro"
 
-#: ../bin/src/ui_behavioursettingspage.h:308
+#: ../bin/src/ui_behavioursettingspage.h:316
 msgid "Language"
 msgstr "Język"
 
@@ -2950,7 +2945,7 @@ msgid "Left"
 msgstr "Lewy"
 
 #: playlist/playlist.cpp:1320 ui/organisedialog.cpp:76
-#: ui/qtsystemtrayicon.cpp:239 ../bin/src/ui_edittagdialog.h:714
+#: ui/qtsystemtrayicon.cpp:254 ../bin/src/ui_edittagdialog.h:714
 msgid "Length"
 msgstr "Długość"
 
@@ -3038,7 +3033,7 @@ msgid "Loading tracks info"
 msgstr "Wczytywanie informacji o utworze"
 
 #: library/librarymodel.cpp:164
-#: internet/podcasts/podcastdiscoverymodel.cpp:105 widgets/prettyimage.cpp:167
+#: internet/podcasts/podcastdiscoverymodel.cpp:105 widgets/prettyimage.cpp:168
 #: widgets/widgetfadehelper.cpp:96 internet/vk/vkservice.cpp:513
 #: internet/vk/vksettingspage.cpp:125 ../bin/src/ui_addpodcastdialog.h:179
 #: ../bin/src/ui_searchpreview.h:105 ../bin/src/ui_organisedialog.h:261
@@ -3254,7 +3249,7 @@ msgstr "Monitoruj zmiany biblioteki"
 msgid "Mono playback"
 msgstr "Odtwarzanie mono"
 
-#: smartplaylists/searchterm.cpp:397
+#: smartplaylists/searchterm.cpp:409
 msgid "Months"
 msgstr "Miesięcy"
 
@@ -3279,11 +3274,11 @@ msgstr "Więcej"
 msgid "Most played"
 msgstr "Najczęściej odtwarzane"
 
-#: devices/giolister.cpp:155
+#: devices/giolister.cpp:161
 msgid "Mount point"
 msgstr "Punkt montowania"
 
-#: devices/devicekitlister.cpp:127
+#: devices/devicekitlister.cpp:127 devices/udisks2lister.cpp:78
 msgid "Mount points"
 msgstr "Punkty montowania"
 
@@ -3301,7 +3296,7 @@ msgstr "Przenieś do biblioteki..."
 msgid "Move up"
 msgstr "Przesuń w górę"
 
-#: transcoder/transcodedialog.cpp:225 ui/mainwindow.cpp:1984
+#: transcoder/transcodedialog.cpp:225 ui/mainwindow.cpp:1983
 #: internet/vk/vkservice.cpp:908
 msgid "Music"
 msgstr "Muzyka"
@@ -3361,8 +3356,8 @@ msgstr "Nigdy"
 msgid "Never played"
 msgstr "Jeszcze nie odtwarzane"
 
-#: ../bin/src/ui_behavioursettingspage.h:327
-#: ../bin/src/ui_behavioursettingspage.h:347
+#: ../bin/src/ui_behavioursettingspage.h:335
+#: ../bin/src/ui_behavioursettingspage.h:355
 msgid "Never start playing"
 msgstr "Nie odtwarzaj automatycznie"
 
@@ -3372,7 +3367,7 @@ msgstr "Nie odtwarzaj automatycznie"
 msgid "New folder"
 msgstr "Nowy folder"
 
-#: ui/mainwindow.cpp:1822 ../bin/src/ui_mainwindow.h:693
+#: ui/mainwindow.cpp:1821 ../bin/src/ui_mainwindow.h:693
 msgid "New playlist"
 msgstr "Nowa lista odtwarzania"
 
@@ -3607,14 +3602,14 @@ msgstr "Otwórz w Dysku Google"
 msgid "Open in new playlist"
 msgstr "Otwórz w nowej liście odtwarzania"
 
-#: ../bin/src/ui_behavioursettingspage.h:342
+#: ../bin/src/ui_behavioursettingspage.h:350
 msgctxt "Refers to behavior settings in Clementine settings page."
 msgid "Open in new playlist"
 msgstr "Otwórz w nowej liście odtwarzania"
 
-#: songinfo/echonestbiographies.cpp:102
+#: songinfo/artistbiography.cpp:94 songinfo/artistbiography.cpp:261
 msgid "Open in your browser"
-msgstr "Otwórz w przeglądarce"
+msgstr ""
 
 #: ../bin/src/ui_globalshortcutssettingspage.h:168
 #: ../bin/src/ui_globalshortcutssettingspage.h:170
@@ -3710,6 +3705,10 @@ msgstr "Właściciel"
 msgid "Parsing Jamendo catalogue"
 msgstr "Parsowanie katalogu Jamendo"
 
+#: devices/udisks2lister.cpp:79
+msgid "Partition label"
+msgstr ""
+
 #: ui/equalizer.cpp:139
 msgid "Party"
 msgstr "Impreza"
@@ -3723,8 +3722,8 @@ msgstr "Impreza"
 msgid "Password"
 msgstr "Hasło"
 
-#: core/globalshortcuts.cpp:50 ui/mainwindow.cpp:1137 ui/mainwindow.cpp:1633
-#: ui/qtsystemtrayicon.cpp:175 wiimotedev/wiimotesettingspage.cpp:114
+#: core/globalshortcuts.cpp:50 ui/mainwindow.cpp:1136 ui/mainwindow.cpp:1632
+#: ui/qtsystemtrayicon.cpp:189 wiimotedev/wiimotesettingspage.cpp:114
 msgid "Pause"
 msgstr "Pauza"
 
@@ -3751,9 +3750,9 @@ msgstr "Piksel"
 msgid "Plain sidebar"
 msgstr "Zwykły pasek boczny"
 
-#: core/globalshortcuts.cpp:49 ui/mainwindow.cpp:670 ui/mainwindow.cpp:1103
-#: ui/mainwindow.cpp:1122 ui/mainwindow.cpp:1637 ui/qtsystemtrayicon.cpp:164
-#: ui/qtsystemtrayicon.cpp:188 wiimotedev/wiimotesettingspage.cpp:107
+#: core/globalshortcuts.cpp:49 ui/mainwindow.cpp:670 ui/mainwindow.cpp:1102
+#: ui/mainwindow.cpp:1121 ui/mainwindow.cpp:1636 ui/qtsystemtrayicon.cpp:177
+#: ui/qtsystemtrayicon.cpp:203 wiimotedev/wiimotesettingspage.cpp:107
 #: ../bin/src/ui_mainwindow.h:659
 msgid "Play"
 msgstr "Odtwarzaj"
@@ -3766,8 +3765,8 @@ msgstr "Ilość odtworzeń"
 msgid "Play if stopped, pause if playing"
 msgstr "Odtwarzaj, gdy zatrzymane; zatrzymaj, gdy odtwarzane"
 
-#: ../bin/src/ui_behavioursettingspage.h:328
-#: ../bin/src/ui_behavioursettingspage.h:348
+#: ../bin/src/ui_behavioursettingspage.h:336
+#: ../bin/src/ui_behavioursettingspage.h:356
 msgid "Play if there is nothing already playing"
 msgstr "Odtwarzaj jeśli nic nie jest aktualnie odtwarzane"
 
@@ -3789,7 +3788,7 @@ msgstr "Opcje odtwarzacza"
 
 #: playlist/playlistcontainer.cpp:290 playlist/playlistlistcontainer.cpp:228
 #: playlist/playlistmanager.cpp:86 playlist/playlistmanager.cpp:155
-#: playlist/playlistmanager.cpp:495 playlist/playlisttabbar.cpp:366
+#: playlist/playlistmanager.cpp:498 playlist/playlisttabbar.cpp:366
 msgid "Playlist"
 msgstr "Lista odtwarzania"
 
@@ -3892,7 +3891,7 @@ msgstr "Naciśnij klawisz"
 msgid "Press a key combination to use for %1..."
 msgstr "Naciśnij kombinację klawiszy dla %1"
 
-#: ../bin/src/ui_behavioursettingspage.h:331
+#: ../bin/src/ui_behavioursettingspage.h:339
 msgid "Pressing \"Previous\" in player will..."
 msgstr "Wciśnięcie \"Wstecz\" w odtwarzaczu..."
 
@@ -3966,12 +3965,12 @@ msgstr "Odpytywanie urządzenia..."
 msgid "Queue Manager"
 msgstr "Menedżer kolejki odtwarzania"
 
-#: ui/mainwindow.cpp:1730
+#: ui/mainwindow.cpp:1729
 msgid "Queue selected tracks"
 msgstr "Kolejkuj wybrane ścieżki"
 
 #: globalsearch/globalsearchview.cpp:466 library/libraryview.cpp:389
-#: ui/mainwindow.cpp:1728
+#: ui/mainwindow.cpp:1727
 msgid "Queue track"
 msgstr "Kolejkuj ścieżkę"
 
@@ -4061,7 +4060,7 @@ msgid "Reggae"
 msgstr "Reggae"
 
 #: playlist/playlistsaveoptionsdialog.cpp:33
-#: ../bin/src/ui_behavioursettingspage.h:364
+#: ../bin/src/ui_behavioursettingspage.h:372
 msgid "Relative"
 msgstr "Względna"
 
@@ -4069,7 +4068,7 @@ msgstr "Względna"
 msgid "Remember Wii remote swing"
 msgstr "Pamiętaj ruchy pilota"
 
-#: ../bin/src/ui_behavioursettingspage.h:317
+#: ../bin/src/ui_behavioursettingspage.h:325
 msgid "Remember from last time"
 msgstr "Zapamiętaj z ostatniego razu"
 
@@ -4153,7 +4152,7 @@ msgstr "Powtarzaj utwór"
 msgid "Replace current playlist"
 msgstr "Zastąp aktualną listę odtwarzania"
 
-#: ../bin/src/ui_behavioursettingspage.h:341
+#: ../bin/src/ui_behavioursettingspage.h:349
 msgid "Replace the playlist"
 msgstr "Zastąp listę odtwarzania"
 
@@ -4185,7 +4184,7 @@ msgstr "Resetuj"
 msgid "Reset play counts"
 msgstr "Wyzeruj licznik odtworzeń"
 
-#: ../bin/src/ui_behavioursettingspage.h:335
+#: ../bin/src/ui_behavioursettingspage.h:343
 msgid "Restart song, then jump to previous if pressed again"
 msgstr "Rozpocznij piosenkę od nowa, przeskocz przy kolejnym wciśnięciu"
 
@@ -4198,7 +4197,7 @@ msgstr "Odtwarzaj od początku lub odtwórz poprzedni utwór jeżeli nie minęł
 msgid "Restrict to ASCII characters"
 msgstr "Ogranicz do znaków ASCII"
 
-#: ../bin/src/ui_behavioursettingspage.h:318
+#: ../bin/src/ui_behavioursettingspage.h:326
 msgid "Resume playback on start"
 msgstr "Wznów odtwarzanie przy uruchamianiu programu"
 
@@ -4273,7 +4272,7 @@ msgstr "Zapisz okładkę na dysk..."
 msgid "Save current grouping"
 msgstr "Zapisz bieżące zgrupowanie"
 
-#: widgets/prettyimage.cpp:184 widgets/prettyimage.cpp:229
+#: widgets/prettyimage.cpp:185 widgets/prettyimage.cpp:230
 msgid "Save image"
 msgstr "Zapisz obraz"
 
@@ -4282,7 +4281,7 @@ msgctxt "Save playlist menu action."
 msgid "Save playlist"
 msgstr "Zapisz listę odtwarzania"
 
-#: playlist/playlistmanager.cpp:225
+#: playlist/playlistmanager.cpp:229
 msgctxt "Title of the playlist save dialog."
 msgid "Save playlist"
 msgstr "Zapisz listę odtwarzania"
@@ -4334,6 +4333,10 @@ msgstr "Wynik"
 #: ../bin/src/ui_lastfmsettingspage.h:135
 msgid "Scrobble tracks that I listen to"
 msgstr "Wysyłaj informacje o utworach, których słucham"
+
+#: ../bin/src/ui_behavioursettingspage.h:313
+msgid "Scroll over icon to change track"
+msgstr ""
 
 #: ../bin/src/ui_seafilesettingspage.h:164
 msgid "Seafile"
@@ -4428,7 +4431,7 @@ msgstr "Przesuń obecnie odtwarzaną ścieżkę o względną wartość"
 msgid "Seek the currently playing track to an absolute position"
 msgstr "Przesuń obecnie odtwarzaną ścieżkę do określonej pozycji"
 
-#: ../bin/src/ui_behavioursettingspage.h:357
+#: ../bin/src/ui_behavioursettingspage.h:365
 msgid "Seeking using a keyboard shortcut or mouse wheel"
 msgstr "Przewijanie za pomocą skrótu klawiaturowego lub rolki w myszce"
 
@@ -4468,7 +4471,7 @@ msgstr "Wybierz wizualizacje..."
 msgid "Select..."
 msgstr "Wybierz..."
 
-#: devices/devicekitlister.cpp:126
+#: devices/devicekitlister.cpp:126 devices/udisks2lister.cpp:77
 msgid "Serial number"
 msgstr "Numer seryjny"
 
@@ -4488,7 +4491,7 @@ msgstr "Szczegóły serwera"
 msgid "Service offline"
 msgstr "Usługa niedostępna"
 
-#: ui/mainwindow.cpp:1767
+#: ui/mainwindow.cpp:1766
 #, qt-format
 msgid "Set %1 to \"%2\"..."
 msgstr "Ustaw %1 na \"%2\"..."
@@ -4580,7 +4583,7 @@ msgstr "Pokazuj okładki w bibliotece"
 msgid "Show dividers"
 msgstr "Pokaż separatory"
 
-#: ui/albumcoverchoicecontroller.cpp:72 widgets/prettyimage.cpp:182
+#: ui/albumcoverchoicecontroller.cpp:72 widgets/prettyimage.cpp:183
 msgid "Show fullsize..."
 msgstr "Pokaż w pełnej wielkości..."
 
@@ -4629,7 +4632,7 @@ msgstr "Pokaż przycisk \"Dodaj do ulubionych\""
 msgid "Show the scrobble button in the main window"
 msgstr "Pokaż przycisk scrobblingu w głównym oknie"
 
-#: ../bin/src/ui_behavioursettingspage.h:305
+#: ../bin/src/ui_behavioursettingspage.h:312
 msgid "Show tray icon"
 msgstr "Pokaż ikonkę w tacce systemowej"
 
@@ -4673,10 +4676,6 @@ msgstr "Wyloguj"
 msgid "Signing in..."
 msgstr "Logowanie..."
 
-#: songinfo/echonestsimilarartists.cpp:58
-msgid "Similar artists"
-msgstr "Podobni wykonawcy"
-
 #: ../bin/src/ui_albumcoverexport.h:211
 msgid "Size"
 msgstr "Wielkość"
@@ -4701,11 +4700,11 @@ msgstr "Ilość przeskoczeń utworu"
 msgid "Skip forwards in playlist"
 msgstr "Przeskocz w przód w liście odtwarzania"
 
-#: ui/mainwindow.cpp:1741
+#: ui/mainwindow.cpp:1740
 msgid "Skip selected tracks"
 msgstr "Pomiń wybrane ścieżki"
 
-#: ui/mainwindow.cpp:1739
+#: ui/mainwindow.cpp:1738
 msgid "Skip track"
 msgstr "Pomiń ścieżkę"
 
@@ -5062,7 +5061,7 @@ msgid ""
 "continue?"
 msgstr "Te pliki zostaną usunięte z urządzenia. Na pewno chcesz kontynuować?"
 
-#: library/libraryview.cpp:646 ui/mainwindow.cpp:2333 widgets/fileview.cpp:187
+#: library/libraryview.cpp:646 ui/mainwindow.cpp:2333 widgets/fileview.cpp:189
 msgid ""
 "These files will be permanently deleted from disk, are you sure you want to "
 "continue?"
@@ -5110,20 +5109,20 @@ msgstr "To urządzenie musi być podłączone i otwarte zanim Clementine zobaczy
 msgid "This device supports the following file formats:"
 msgstr "To urządzenie obsługuje następujące formaty plików:"
 
-#: devices/devicemanager.cpp:563 devices/devicemanager.cpp:574
+#: devices/devicemanager.cpp:572 devices/devicemanager.cpp:583
 msgid "This device will not work properly"
 msgstr "To urządzenie nie będzie działać prawidłowo"
 
-#: devices/devicemanager.cpp:564
+#: devices/devicemanager.cpp:573
 msgid ""
 "This is an MTP device, but you compiled Clementine without libmtp support."
 msgstr "To jest urządzenie MTP, ale skompilowałeś Clementine bez obsługi libmtp."
 
-#: devices/devicemanager.cpp:575
+#: devices/devicemanager.cpp:584
 msgid "This is an iPod, but you compiled Clementine without libgpod support."
 msgstr "To jest urządzenie iPod, ale skompilowałeś Clementine bez obsługi libgpod."
 
-#: devices/devicemanager.cpp:322
+#: devices/devicemanager.cpp:331
 msgid ""
 "This is the first time you have connected this device.  Clementine will now "
 "scan the device to find music files - this may take some time."
@@ -5137,17 +5136,17 @@ msgstr "Opcja ta może zostać zmieniona w preferencjach \"Trybu\""
 msgid "This stream is for paid subscribers only"
 msgstr "Strumień wyłącznie dla płacących subskrybentów"
 
-#: devices/devicemanager.cpp:591
+#: devices/devicemanager.cpp:600
 #, qt-format
 msgid "This type of device is not supported: %1"
 msgstr "Ten typ urządzenia nie jest obsługiwany: %1"
 
-#: ../bin/src/ui_behavioursettingspage.h:358
+#: ../bin/src/ui_behavioursettingspage.h:366
 msgid "Time step"
 msgstr "Krok czasu"
 
 #: playlist/playlist.cpp:1314 ui/organisedialog.cpp:60
-#: ui/qtsystemtrayicon.cpp:232 ../bin/src/ui_about.h:141
+#: ui/qtsystemtrayicon.cpp:247 ../bin/src/ui_about.h:141
 #: ../bin/src/ui_edittagdialog.h:730 ../bin/src/ui_trackselectiondialog.h:210
 #: ../bin/src/ui_ripcddialog.h:306
 msgid "Title"
@@ -5165,7 +5164,7 @@ msgstr "Przełącz ładne OSD"
 msgid "Toggle fullscreen"
 msgstr "Przełącz tryb pełnoekranowy"
 
-#: ui/mainwindow.cpp:1732
+#: ui/mainwindow.cpp:1731
 msgid "Toggle queue status"
 msgstr "Przełącz stan kolejki"
 
@@ -5248,13 +5247,17 @@ msgstr "Turbina"
 msgid "Turn off"
 msgstr "Wyłącz"
 
-#: devices/giolister.cpp:157
+#: devices/giolister.cpp:163
 msgid "URI"
 msgstr "URI"
 
 #: core/commandlineoptions.cpp:150
 msgid "URL(s)"
 msgstr "URL"
+
+#: devices/udisks2lister.cpp:80
+msgid "UUID"
+msgstr ""
 
 #: ../bin/src/ui_transcoderoptionsspeex.h:227
 msgid "Ultra wide band (UWB)"
@@ -5273,7 +5276,7 @@ msgstr "Nie udało się pobrać %1 (%2)"
 #: core/song.cpp:435 library/librarymodel.cpp:374 library/librarymodel.cpp:379
 #: library/librarymodel.cpp:383 library/librarymodel.cpp:1156
 #: library/savedgroupingmanager.cpp:103 playlist/playlistdelegates.cpp:305
-#: playlist/playlistmanager.cpp:502 playlist/playlistmanager.cpp:503
+#: playlist/playlistmanager.cpp:505 playlist/playlistmanager.cpp:506
 #: ui/albumcoverchoicecontroller.cpp:126 ui/edittagdialog.cpp:463
 #: ui/edittagdialog.cpp:507
 msgid "Unknown"
@@ -5292,11 +5295,11 @@ msgstr "Nieznany błąd"
 msgid "Unset cover"
 msgstr "Usuń okładkę"
 
-#: ui/mainwindow.cpp:1737
+#: ui/mainwindow.cpp:1736
 msgid "Unskip selected tracks"
 msgstr "Nie pomijaj wybranych ścieżek"
 
-#: ui/mainwindow.cpp:1735
+#: ui/mainwindow.cpp:1734
 msgid "Unskip track"
 msgstr "Nie pomijaj ścieżki"
 
@@ -5305,7 +5308,7 @@ msgstr "Nie pomijaj ścieżki"
 msgid "Unsubscribe"
 msgstr "Anuluj subskrypcję"
 
-#: songinfo/songkickconcerts.cpp:174
+#: songinfo/songkickconcerts.cpp:158
 msgid "Upcoming Concerts"
 msgstr "Nadchodzące koncerty"
 
@@ -5407,7 +5410,7 @@ msgstr "Używaj powiadomień do raportowania statusów urządzenia Wii Remote"
 msgid "Use temporal noise shaping"
 msgstr "Użyj chwilowego kształtowania szumu"
 
-#: ../bin/src/ui_behavioursettingspage.h:311
+#: ../bin/src/ui_behavioursettingspage.h:319
 msgid "Use the system default"
 msgstr "Użyj domyślnych ustawień systemowych"
 
@@ -5439,7 +5442,7 @@ msgstr "Interfejs użytkownika"
 msgid "Username"
 msgstr "Użytkownik"
 
-#: ../bin/src/ui_behavioursettingspage.h:324
+#: ../bin/src/ui_behavioursettingspage.h:332
 msgid "Using the menu to add a song will..."
 msgstr "Dodanie utworu z menu kontekstowego powoduje..."
 
@@ -5453,7 +5456,7 @@ msgid "Variable bit rate"
 msgstr "Zmienny bitrate"
 
 #: globalsearch/globalsearchmodel.cpp:109 library/librarymodel.cpp:300
-#: playlist/playlistmanager.cpp:514 ui/albumcovermanager.cpp:273
+#: playlist/playlistmanager.cpp:517 ui/albumcovermanager.cpp:273
 msgid "Various artists"
 msgstr "Różni wykonawcy"
 
@@ -5508,7 +5511,7 @@ msgstr "WMA"
 msgid "Wall"
 msgstr "Ściana"
 
-#: playlist/playlisttabbar.cpp:192 ../bin/src/ui_behavioursettingspage.h:307
+#: playlist/playlisttabbar.cpp:192 ../bin/src/ui_behavioursettingspage.h:315
 msgid "Warn me when closing a playlist tab"
 msgstr "Ostrzeż mnie kiedy zamknę zakładkę listy odtwarzania"
 
@@ -5520,11 +5523,11 @@ msgstr "Wav"
 msgid "Website"
 msgstr "Strona internetowa"
 
-#: smartplaylists/searchterm.cpp:395
+#: smartplaylists/searchterm.cpp:407
 msgid "Weeks"
 msgstr "Tygodni"
 
-#: ../bin/src/ui_behavioursettingspage.h:314
+#: ../bin/src/ui_behavioursettingspage.h:322
 msgid "When Clementine starts"
 msgstr "Podczas startu Clementine"
 
@@ -5534,7 +5537,7 @@ msgid ""
 "If there are no matches then it will use the largest image in the directory."
 msgstr "Szukając okładki, Clementine w pierwszej kolejności przeszuka pliki obrazów zawierające któreś z podanych słów.\nW przypadku braku takich plików użyty zostanie największy obraz z danego katalogu."
 
-#: ../bin/src/ui_behavioursettingspage.h:361
+#: ../bin/src/ui_behavioursettingspage.h:369
 msgid "When saving a playlist, file paths should be"
 msgstr "Podczas zapisywania listy odtwarzania, ścieżki plików mają być"
 
@@ -5618,7 +5621,7 @@ msgstr "Czy chcesz teraz rozpocząć odświeżanie biblioteki?"
 msgid "Write all songs statistics into songs' files"
 msgstr "Zapisz wszystkie statystyki w plikach muzycznych"
 
-#: ../bin/src/ui_behavioursettingspage.h:366
+#: ../bin/src/ui_behavioursettingspage.h:374
 msgid "Write metadata"
 msgstr "Zapisz metadane"
 
@@ -5639,7 +5642,7 @@ msgstr "Rok"
 msgid "Year - Album"
 msgstr "Rok - Album"
 
-#: smartplaylists/searchterm.cpp:399
+#: smartplaylists/searchterm.cpp:411
 msgid "Years"
 msgstr "Lat"
 
@@ -5733,7 +5736,7 @@ msgid ""
 "shortcuts in Clementine."
 msgstr "Musisz włączyć Preferencje systemowe i zaznaczyć \"<span style=\"font-style:italic\">Włącz dostęp do urządzeń wspomagających</span>\", by używać skrótów globalnych w Clementine."
 
-#: ../bin/src/ui_behavioursettingspage.h:313
+#: ../bin/src/ui_behavioursettingspage.h:321
 msgid "You will need to restart Clementine if you change the language."
 msgstr "Jeśli zmieniałeś ustawienia językowe, będziesz musiał zrestartować Clementine."
 
@@ -5771,7 +5774,7 @@ msgstr "W Twoim systemie brakuje wsparcia dla OpenGL, wizualizacje są niedostę
 msgid "Your username or password was incorrect."
 msgstr "Nazwa użytkownika lub hasło niepoprawne."
 
-#: smartplaylists/searchterm.cpp:370
+#: smartplaylists/searchterm.cpp:382
 msgid "Z-A"
 msgstr "Z-A"
 
@@ -5785,7 +5788,7 @@ msgctxt ""
 msgid "add %n songs"
 msgstr "dodaj %n utworów"
 
-#: smartplaylists/searchterm.cpp:205
+#: smartplaylists/searchterm.cpp:217
 msgid "after"
 msgstr "po"
 
@@ -5801,15 +5804,15 @@ msgstr "i"
 msgid "automatic"
 msgstr "automatycznie"
 
-#: smartplaylists/searchterm.cpp:207
+#: smartplaylists/searchterm.cpp:219
 msgid "before"
 msgstr "przed"
 
-#: smartplaylists/searchterm.cpp:217
+#: smartplaylists/searchterm.cpp:229
 msgid "between"
 msgstr "pomiędzy"
 
-#: smartplaylists/searchterm.cpp:380
+#: smartplaylists/searchterm.cpp:392
 msgid "biggest first"
 msgstr "najpierw największe"
 
@@ -5817,7 +5820,7 @@ msgstr "najpierw największe"
 msgid "bpm"
 msgstr "uderzeń na minutę"
 
-#: smartplaylists/searchterm.cpp:225
+#: smartplaylists/searchterm.cpp:237
 msgid "contains"
 msgstr "zawiera"
 
@@ -5832,15 +5835,15 @@ msgstr "wyłączony"
 msgid "disc %1"
 msgstr "płyta %1"
 
-#: smartplaylists/searchterm.cpp:227
+#: smartplaylists/searchterm.cpp:239
 msgid "does not contain"
 msgstr "nie zawiera"
 
-#: smartplaylists/searchterm.cpp:231
+#: smartplaylists/searchterm.cpp:243
 msgid "ends with"
 msgstr "kończy się na"
 
-#: smartplaylists/searchterm.cpp:237
+#: smartplaylists/searchterm.cpp:249
 msgid "equals"
 msgstr "jest równy"
 
@@ -5852,7 +5855,7 @@ msgstr "gpodder.net"
 msgid "gpodder.net directory"
 msgstr "katalog gpodder.net"
 
-#: smartplaylists/searchterm.cpp:233
+#: smartplaylists/searchterm.cpp:245
 msgid "greater than"
 msgstr "większy niż"
 
@@ -5860,7 +5863,7 @@ msgstr "większy niż"
 msgid "iPods and USB devices currently don't work on Windows.  Sorry!"
 msgstr "IPody i urządzenia USB obecnie nie działają na systemie Windows. Przepraszamy!"
 
-#: smartplaylists/searchterm.cpp:213
+#: smartplaylists/searchterm.cpp:225
 msgid "in the last"
 msgstr "w ostatnich"
 
@@ -5871,11 +5874,11 @@ msgstr "w ostatnich"
 msgid "kbps"
 msgstr "kbps"
 
-#: smartplaylists/searchterm.cpp:235
+#: smartplaylists/searchterm.cpp:247
 msgid "less than"
 msgstr "mniejszy niż"
 
-#: smartplaylists/searchterm.cpp:376
+#: smartplaylists/searchterm.cpp:388
 msgid "longest first"
 msgstr "najpierw najdłuższe"
 
@@ -5885,27 +5888,27 @@ msgctxt ""
 msgid "move %n songs"
 msgstr "przenieś utwory: %n"
 
-#: smartplaylists/searchterm.cpp:373
+#: smartplaylists/searchterm.cpp:385
 msgid "newest first"
 msgstr "najpierw najnowsze"
 
-#: smartplaylists/searchterm.cpp:239
+#: smartplaylists/searchterm.cpp:251
 msgid "not equals"
 msgstr "nie wynosi"
 
-#: smartplaylists/searchterm.cpp:215
+#: smartplaylists/searchterm.cpp:227
 msgid "not in the last"
 msgstr "oprócz ostatnich"
 
-#: smartplaylists/searchterm.cpp:211
+#: smartplaylists/searchterm.cpp:223
 msgid "not on"
 msgstr "nie w"
 
-#: smartplaylists/searchterm.cpp:372
+#: smartplaylists/searchterm.cpp:384
 msgid "oldest first"
 msgstr "najpierw najstarsze"
 
-#: smartplaylists/searchterm.cpp:209
+#: smartplaylists/searchterm.cpp:221
 msgid "on"
 msgstr "w dniu"
 
@@ -5927,7 +5930,7 @@ msgctxt ""
 msgid "remove %n songs"
 msgstr "usuń %n utworów"
 
-#: smartplaylists/searchterm.cpp:375
+#: smartplaylists/searchterm.cpp:387
 msgid "shortest first"
 msgstr "najpierw najkrótsze"
 
@@ -5935,7 +5938,7 @@ msgstr "najpierw najkrótsze"
 msgid "shuffle songs"
 msgstr "losuj utwory"
 
-#: smartplaylists/searchterm.cpp:379
+#: smartplaylists/searchterm.cpp:391
 msgid "smallest first"
 msgstr "najpierw najmniejsze"
 
@@ -5943,7 +5946,7 @@ msgstr "najpierw najmniejsze"
 msgid "sort songs"
 msgstr "sortuj utwory"
 
-#: smartplaylists/searchterm.cpp:229
+#: smartplaylists/searchterm.cpp:241
 msgid "starts with"
 msgstr "zaczyna się na"
 
