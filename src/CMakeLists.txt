@@ -311,6 +311,7 @@ set(SOURCES
   songinfo/songkickconcertwidget.cpp
   songinfo/songplaystats.cpp
   songinfo/spotifyimages.cpp
+  songinfo/streamdiscoverer.cpp
   songinfo/taglyricsinfoprovider.cpp
   songinfo/ultimatelyricslyric.cpp
   songinfo/ultimatelyricsprovider.cpp
@@ -358,6 +359,7 @@ set(SOURCES
   ui/settingsdialog.cpp
   ui/settingspage.cpp
   ui/standarditemiconloader.cpp
+  ui/streamdetailsdialog.cpp
   ui/systemtrayicon.cpp
   ui/trackselectiondialog.cpp
   ui/windows7thumbbar.cpp
@@ -603,6 +605,7 @@ set(HEADERS
   songinfo/songkickconcertwidget.h
   songinfo/songplaystats.h
   songinfo/spotifyimages.h
+  songinfo/streamdiscoverer.h
   songinfo/taglyricsinfoprovider.h
   songinfo/ultimatelyricslyric.h
   songinfo/ultimatelyricsprovider.h
@@ -641,6 +644,7 @@ set(HEADERS
   ui/settingsdialog.h
   ui/settingspage.h
   ui/standarditemiconloader.h
+  ui/streamdetailsdialog.h
   ui/systemtrayicon.h
   ui/trackselectiondialog.h
   ui/windows7thumbbar.h
@@ -764,6 +768,7 @@ set(UI
   ui/organiseerrordialog.ui
   ui/playbacksettingspage.ui
   ui/settingsdialog.ui
+  ui/streamdetailsdialog.ui
   ui/trackselectiondialog.ui
 
   widgets/equalizerslider.ui
@@ -859,7 +864,6 @@ optional_source(APPLE
     core/macfslistener.mm
     core/macglobalshortcutbackend.mm
     core/mac_startup.mm
-    devices/macdevicelister.mm
     engines/osxdevicefinder.cpp
     networkremote/bonjour.mm
     ui/globalshortcutgrabber.mm
@@ -869,9 +873,17 @@ optional_source(APPLE
   HEADERS
     core/macfslistener.h
     core/macglobalshortcutbackend.h
-    devices/macdevicelister.h
     ui/macsystemtrayicon.h
 )
+
+if(APPLE)
+  optional_source(HAVE_LIBMTP
+   SOURCES
+      devices/macdevicelister.mm
+    HEADERS
+      devices/macdevicelister.h
+  )
+endif()
 
 # Platform specific - Windows
 optional_source(WIN32
@@ -1164,31 +1176,6 @@ optional_source(HAVE_BOX
     internet/box/boxsettingspage.ui
 )
 
-# Vk.com support
-optional_source(HAVE_VK
-  INCLUDE_DIRECTORIES 
-    ${VREEN_INCLUDE_DIRS}
-  SOURCES
-    globalsearch/vksearchprovider.cpp
-    internet/vk/vkconnection.cpp
-    internet/vk/vkmusiccache.cpp
-    internet/vk/vksearchdialog.cpp
-    internet/vk/vkservice.cpp
-    internet/vk/vksettingspage.cpp
-    internet/vk/vkurlhandler.cpp
-  HEADERS
-    globalsearch/vksearchprovider.h
-    internet/vk/vkconnection.h
-    internet/vk/vkmusiccache.h
-    internet/vk/vksearchdialog.h
-    internet/vk/vkservice.h
-    internet/vk/vksettingspage.h
-    internet/vk/vkurlhandler.h
-  UI
-    internet/vk/vksearchdialog.ui
-    internet/vk/vksettingspage.ui
-)
-
 # Seafile support
 optional_source(HAVE_SEAFILE
   SOURCES
@@ -1225,7 +1212,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.in
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/version.h.in
                ${CMAKE_CURRENT_BINARY_DIR}/version.h)
 
-qt4_wrap_cpp(MOC ${HEADERS})
+qt4_wrap_cpp(MOC ${HEADERS} OPTIONS "-D_SYS_SYSMACROS_H_OUTER")
 qt4_wrap_ui(UIC ${UI})
 qt4_add_resources(QRC ${RESOURCES})
 
@@ -1271,6 +1258,7 @@ target_link_libraries(clementine_lib
   ${GSTREAMER_LIBRARIES}
   ${GSTREAMER_APP_LIBRARIES}
   ${GSTREAMER_TAG_LIBRARIES}
+  ${GSTREAMER_PBUTILS_LIBRARIES}
   ${QTSINGLEAPPLICATION_LIBRARIES}
   ${QTSINGLECOREAPPLICATION_LIBRARIES}
   ${QTIOCOMPRESSOR_LIBRARIES}
@@ -1279,10 +1267,6 @@ target_link_libraries(clementine_lib
   z
   Qocoa
 )
-
-if(HAVE_VK)
-  target_link_libraries(clementine_lib ${VREEN_LIBRARIES})
-endif(HAVE_VK)
 
 if(ENABLE_VISUALISATIONS)
   target_link_libraries(clementine_lib ${LIBPROJECTM_LIBRARIES})
@@ -1336,13 +1320,13 @@ endif()
 
 if (APPLE)
   target_link_libraries(clementine_lib
-    /System/Library/Frameworks/AppKit.framework
-    /System/Library/Frameworks/Carbon.framework
-    /System/Library/Frameworks/CoreAudio.framework
-    /System/Library/Frameworks/DiskArbitration.framework
-    /System/Library/Frameworks/Foundation.framework
-    /System/Library/Frameworks/IOKit.framework
-    /System/Library/Frameworks/ScriptingBridge.framework
+    "-framework AppKit"
+    "-framework Carbon"
+    "-framework CoreAudio"
+    "-framework DiskArbitration"
+    "-framework Foundation"
+    "-framework IOKit"
+    "-framework ScriptingBridge"
   )
   target_link_libraries(clementine_lib ${SPMEDIAKEYTAP_LIBRARIES})
   if (HAVE_SPARKLE)

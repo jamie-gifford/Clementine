@@ -1284,7 +1284,8 @@ bool Playlist::CompareItems(int column, Qt::SortOrder order,
     case Column_Samplerate:
       cmp(samplerate);
     case Column_Filename:
-      cmp(url);
+      return (QString::localeAwareCompare(a->Url().path().toLower(),
+                                          b->Url().path().toLower()) < 0);
     case Column_BaseFilename:
       cmp(basefilename);
     case Column_Filesize:
@@ -1306,6 +1307,18 @@ bool Playlist::CompareItems(int column, Qt::SortOrder order,
 #undef strcmp
 
   return false;
+}
+
+bool Playlist::ComparePathDepths(Qt::SortOrder order,
+                                 shared_ptr<PlaylistItem> _a,
+                                 shared_ptr<PlaylistItem> _b) {
+  shared_ptr<PlaylistItem> a = order == Qt::AscendingOrder ? _a : _b;
+  shared_ptr<PlaylistItem> b = order == Qt::AscendingOrder ? _b : _a;
+
+  int a_dir_level = a->Url().path().count('/');
+  int b_dir_level = b->Url().path().count('/');
+
+  return a_dir_level < b_dir_level;
 }
 
 QString Playlist::column_name(Column column) {
@@ -1409,6 +1422,14 @@ void Playlist::sort(int column, Qt::SortOrder order) {
                 std::bind(&Playlist::CompareItems, Column_Disc, order, _1, _2));
     qStableSort(begin, new_items.end(), std::bind(&Playlist::CompareItems,
                                                   Column_Album, order, _1, _2));
+  } else if (column == Column_Filename) {
+    // When sorting by full paths we also expect a hierarchical order. This
+    // returns a breath-first ordering of paths.
+    qStableSort(
+        begin, new_items.end(),
+        std::bind(&Playlist::CompareItems, Column_Filename, order, _1, _2));
+    qStableSort(begin, new_items.end(),
+                std::bind(&Playlist::ComparePathDepths, order, _1, _2));
   } else {
     qStableSort(begin, new_items.end(),
                 std::bind(&Playlist::CompareItems, column, order, _1, _2));
@@ -1416,6 +1437,8 @@ void Playlist::sort(int column, Qt::SortOrder order) {
 
   undo_stack_->push(
       new PlaylistUndoCommands::SortItems(this, column, order, new_items));
+
+  ReshuffleIndices();
 }
 
 void Playlist::ReOrderWithoutUndo(const PlaylistItemList& new_items) {
