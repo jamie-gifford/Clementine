@@ -928,6 +928,17 @@ optional_source(HAVE_X11 SOURCES widgets/osd_x11.cpp)
 if(UNIX AND HAVE_DBUS)
   file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/dbus)
 
+  # MPRIS DBUS interfaces
+  qt5_add_dbus_adaptor(SOURCES
+      dbus/org.freedesktop.MediaPlayer.player.xml
+      core/mpris1.h mpris::Mpris1Player core/mpris_player MprisPlayer)
+  qt5_add_dbus_adaptor(SOURCES
+      dbus/org.freedesktop.MediaPlayer.root.xml
+      core/mpris1.h mpris::Mpris1Root core/mpris_root MprisRoot)
+  qt5_add_dbus_adaptor(SOURCES
+      dbus/org.freedesktop.MediaPlayer.tracklist.xml
+      core/mpris1.h mpris::Mpris1TrackList core/mpris_tracklist MprisTrackList)
+
   # MPRIS 2.0 DBUS interfaces
   qt5_add_dbus_adaptor(SOURCES
       dbus/org.mpris.MediaPlayer2.Player.xml
@@ -1030,11 +1041,13 @@ endif(UNIX AND HAVE_DBUS)
 optional_source(HAVE_DBUS
   SOURCES
     core/mpris.cpp
+    core/mpris1.cpp
     core/mpris2.cpp
     networkremote/avahi.cpp
     ui/dbusscreensaver.cpp
   HEADERS
     core/mpris.h
+    core/mpris1.h
     core/mpris2.h
 )
 
