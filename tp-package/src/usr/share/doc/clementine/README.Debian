@@ -1,0 +1,70 @@
+# clementine for Debian
+
+The current original upstream version of clementine use some embedded copy code located in 3rdparty/*. 
+
+## Some of them can be replaced by an equivalent Debian package
+
+* libmygpo-qt: It is a shared library packaged in Debian.
+
+* libprojectm2: It is a shared library already packaged in Debian but some patches are
+needed to compile Clementine with it. Patches are now included since version 2.0.1+dfsg-6
+of libprojectm2. (see #600653)
+
+* taglib: It is a shared library packaged in Debian.
+
+* qsqlite: This is included in Debian, with the FTS3 compile-time option enabled.
+
+## Some of them must be used in this package
+
+* qxt: It is a modified copy of a the qxtglobalshortcut component of the libqxt
+  library. This library was packaged in Debian by myself but the project was
+  now abandoned by upstream and will become irrelevant in the future of QT
+  developments. Therefore we can't use the system packaged equivalent any
+  longer and I think it's better now to let Clementine developers manage and
+  maintain this modified copy.
+
+* qtsingleapplication: It is a small shared library not packaged in Debian 
+unfortunately. It is used by others Debian package as embed code copy too.
+
+* qtiocompressor: It is a small shared library not packaged in Debian unfortunately.
+
+* qocoa: It is a collection of Qt wrappers. It is used for easily switch between standard Qt widget
+and OSX widget according to the platform. It is a hard requirement for Clementine.
+Upstream author recommends to use it as an embed copy :
+  - https://github.com/mikemcquaid/Qocoa#usage
+
+* gmock: It is a test framework. There are a package google-mock in Debian but
+  it does not provide any shared libraries and recommends to use gmock
+  framework staticaly like clementine developers does. See README.Debian file
+  of google-mock package.
+
+## Some of them must not be used in this package
+
+* SPMediaKeyTap: Not needed on GNU/Linux system so not used in this package.
+* google-breakpad: Only useful for reporting bugs using the google-breakpad
+  service not needed in Debian.
+* tinysvcmdns: Not needed on GNU/Linux system so not used in this package.
+
+## "Easter eggs"
+
+The current upstream version of clementine also use some non-dfsg files located in data/.
+They are mainly used for some "Easter eggs" displayed in clementine interface.
+
+## For the reasons above, the following components have been removed in the DFSG Debian version of this package :
+
+* 3rdparty/SPMediaKeyTap
+* 3rdparty/google-breakpad
+* 3rdparty/libmygpo-qt
+* 3rdparty/libmygpo-qt5
+* 3rdparty/libprojectm
+* 3rdparty/qsqlite
+* 3rdparty/taglib
+* 3rdparty/tinysvcmdns
+* 3rdparty/utf8-cpp
+* data/hypnotoad.gif
+* data/lumberjacksong.txt
+* dist/windows/nsisplugins/KillProc.dll
+* dist/windows/nsisplugins/ShellExecAsUser.dll
+* dist/windows/nsisplugins/nsisos.dll
+ 
+ -- Thomas Pierson <contact@thomaspierson.fr>, Mon, 26 Oct 2020 11:16:38 +0200
