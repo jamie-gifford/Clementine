@@ -9,10 +9,11 @@ all: $(packages)
 
 clementine.deb:
 	mkdir -p scratch/usr/bin
+	mkdir -p scratch/DEBIAN
 	rsync -av src/ scratch/
 	rsync -av ../bin/clementine scratch/usr/bin
 	rsync -av ../bin/clementine-tagreader scratch/usr/bin
-	m4 control.m4 > src/DEBIAN/control
+	m4 control.m4 > scratch/DEBIAN/control
 	dpkg-deb --build scratch clementine.deb
 
 clean:
